@@ -1,0 +1,2479 @@
+<html lang="en" style=""><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Analytics | Teamtailor</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=1280">
+
+    <!-- teamtailor.com pwa url handler origin trial: https://developer.chrome.com/origintrials/#/view_trial/-5376172055173529599 -->
+    <meta http-equiv="origin-trial" content="AieKnZHzhnfetkRpbvYFDRGHt9f/UbWM1Awpb34VTmzcT61EBB/MdWjDZ33vGvWtWbfu30MzYBqg/wKdQa9rAAUAAABseyJvcmlnaW4iOiJodHRwczovL3RlYW10YWlsb3IuY29tOjQ0MyIsImZlYXR1cmUiOiJXZWJBcHBVcmxIYW5kbGluZyIsImV4cGlyeSI6MTY0MzE1NTE5OSwiaXNTdWJkb21haW4iOnRydWV9">
+
+    <script type="text/javascript" async="" src="https://widget.intercom.io/widget/c3b2d8b8e567c16a39d8495a5b1b2b3865dd4dc7"></script><script src="https://assets.teamtailor-cdn.com/assets/ember/check-browser-support-54017761e4c67f8c044fa44f6e458637.js" async=""></script>
+
+    
+<meta name="teamtailor/config/environment" content="%7B%22timeTailorEnabled%22%3A%7B%22buildNotifications%22%3Atrue%2C%22notifyOnBuildError%22%3Atrue%2C%22notifyOnBuildSuccess%22%3Atrue%2C%22sections%22%3Atrue%2C%22contentPages%22%3Atrue%2C%22features%22%3Atrue%2C%22redactor%22%3Atrue%2C%22compilationRelated%22%3Atrue%2C%22oldBrowserSupport%22%3Atrue%2C%22sourceMaps%22%3Atrue%2C%22hotReloading%22%3Atrue%2C%22testRelated%22%3Atrue%2C%22testRoute%22%3Atrue%7D%2C%22modulePrefix%22%3A%22teamtailor%22%2C%22environment%22%3A%22production%22%2C%22APP_NAME%22%3A%22eu-pink%22%2C%22TEAMTAILOR_ENTERPRISE_ENABLED%22%3Afalse%2C%22APP_HOST%22%3A%22app.teamtailor.com%22%2C%22HTTP_HOST%22%3A%22teamtailor.com%22%2C%22EXT_HOST%22%3A%22ext.teamtailor.com%22%2C%22RAILS_HOST%22%3A%22tt.teamtailor.com%22%2C%22WWW_HOST%22%3A%22www.teamtailor.com%22%2C%22httpOrHttps%22%3A%22https%22%2C%22SLACK_APP_CLIENT_ID%22%3A%222592778143.90757926371%22%2C%22CLEAR_SERVICE_WORKER%22%3Afalse%2C%22EMBER_ASSETS_ROOT_PATH%22%3A%22https://assets.teamtailor-cdn.com/assets/ember/%22%2C%22EXTRA_ASSETS_ROOT_PATH%22%3A%22https://assets.teamtailor-cdn.com/extras%22%2C%22CRONOFY_DATA_CENTRE%22%3A%22de%22%2C%22REVIEW_APP%22%3Anull%2C%22TRACKR_URL%22%3A%22https://trackr.teamtailor.app%22%2C%22TEAMTAILOR_ADAPTER_BASE_URL%22%3A%22https://bk08ex4b5f.execute-api.eu-west-1.amazonaws.com/production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history%22%2C%22EmberENV%22%3A%7B%22LOG_VERSION%22%3Afalse%2C%22EXTEND_PROTOTYPES%22%3Atrue%2C%22FEATURES%22%3A%7B%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22CLOUDFRONT_IMAGES_HOST%22%3A%22https://images.teamtailor-cdn.com%22%2C%22pageTitle%22%3A%7B%22prepend%22%3Atrue%7D%2C%22polyfill-io%22%3A%7B%22features%22%3A%5B%22Intl.~locale.ar%22%2C%22Intl.~locale.az%22%2C%22Intl.~locale.da%22%2C%22Intl.~locale.de%22%2C%22Intl.~locale.en%22%2C%22Intl.~locale.en-GB%22%2C%22Intl.~locale.es%22%2C%22Intl.~locale.et%22%2C%22Intl.~locale.fi%22%2C%22Intl.~locale.fr%22%2C%22Intl.~locale.fr-CA%22%2C%22Intl.~locale.hu%22%2C%22Intl.~locale.it%22%2C%22Intl.~locale.lt%22%2C%22Intl.~locale.lv%22%2C%22Intl.~locale.nl%22%2C%22Intl.~locale.no%22%2C%22Intl.~locale.pl%22%2C%22Intl.~locale.pt%22%2C%22Intl.~locale.pt-BR%22%2C%22Intl.~locale.sk%22%2C%22Intl.~locale.sv%22%5D%7D%2C%22supportedLocales%22%3A%5B%7B%22value%22%3A%22ar%22%2C%22name%22%3A%22Arabic%22%2C%22intlKey%22%3A%22language_codes.ar%22%7D%2C%7B%22value%22%3A%22da%22%2C%22name%22%3A%22Danish%22%2C%22intlKey%22%3A%22language_codes.da%22%7D%2C%7B%22value%22%3A%22de%22%2C%22name%22%3A%22German%22%2C%22intlKey%22%3A%22language_codes.de%22%7D%2C%7B%22value%22%3A%22en%22%2C%22name%22%3A%22English%22%2C%22intlKey%22%3A%22language_codes.en%22%7D%2C%7B%22value%22%3A%22en-GB%22%2C%22name%22%3A%22English%20(United%20Kingdom)%22%2C%22intlKey%22%3A%22language_codes.en-GB%22%7D%2C%7B%22value%22%3A%22es%22%2C%22name%22%3A%22Spanish%22%2C%22intlKey%22%3A%22language_codes.es%22%7D%2C%7B%22value%22%3A%22et%22%2C%22name%22%3A%22Estonian%22%2C%22intlKey%22%3A%22language_codes.et%22%7D%2C%7B%22value%22%3A%22fi%22%2C%22name%22%3A%22Finnish%22%2C%22intlKey%22%3A%22language_codes.fi%22%7D%2C%7B%22value%22%3A%22fr%22%2C%22name%22%3A%22French%22%2C%22intlKey%22%3A%22language_codes.fr%22%7D%2C%7B%22value%22%3A%22hu%22%2C%22name%22%3A%22Hungarian%22%2C%22intlKey%22%3A%22language_codes.hu%22%7D%2C%7B%22value%22%3A%22it%22%2C%22name%22%3A%22Italian%22%2C%22intlKey%22%3A%22language_codes.it%22%7D%2C%7B%22value%22%3A%22lt%22%2C%22name%22%3A%22Lithuanian%22%2C%22intlKey%22%3A%22language_codes.lt%22%7D%2C%7B%22value%22%3A%22lv%22%2C%22name%22%3A%22Latvian%22%2C%22intlKey%22%3A%22language_codes.lv%22%7D%2C%7B%22value%22%3A%22nl%22%2C%22name%22%3A%22Dutch%22%2C%22intlKey%22%3A%22language_codes.nl%22%7D%2C%7B%22value%22%3A%22no%22%2C%22name%22%3A%22Norwegian%22%2C%22intlKey%22%3A%22language_codes.no%22%7D%2C%7B%22value%22%3A%22pl%22%2C%22name%22%3A%22Polish%22%2C%22intlKey%22%3A%22language_codes.pl%22%7D%2C%7B%22value%22%3A%22fr-CA%22%2C%22name%22%3A%22French%20(Canada)%22%2C%22intlKey%22%3A%22language_codes.fr-CA%22%7D%2C%7B%22value%22%3A%22pt%22%2C%22name%22%3A%22Portuguese%20(Portugal)%22%2C%22intlKey%22%3A%22language_codes.pt%22%7D%2C%7B%22value%22%3A%22pt-BR%22%2C%22name%22%3A%22Portuguese%20(Brazil)%22%2C%22intlKey%22%3A%22language_codes.pt-BR%22%7D%2C%7B%22value%22%3A%22sk%22%2C%22name%22%3A%22Slovak%22%2C%22intlKey%22%3A%22language_codes.sk%22%7D%2C%7B%22value%22%3A%22sv%22%2C%22name%22%3A%22Swedish%22%2C%22intlKey%22%3A%22language_codes.sv%22%7D%5D%2C%22translationLocale%22%3A%7B%22value%22%3A%22az%22%2C%22name%22%3A%22Translate%20mode%22%2C%22intlKey%22%3A%22language_codes.az%22%7D%2C%22timeFormats%22%3A%5B%7B%22value%22%3A%22HH%3Amm%22%2C%22namespace%22%3A%2224_hours%22%7D%2C%7B%22value%22%3A%22hh%3Amm%20A%22%2C%22namespace%22%3A%22am_pm%22%7D%5D%2C%22moment%22%3A%7B%22includeTimezone%22%3A%22subset%22%2C%22includeLocales%22%3A%5B%22ar%22%2C%22az%22%2C%22da%22%2C%22de%22%2C%22en-GB%22%2C%22es%22%2C%22et%22%2C%22fi%22%2C%22fr%22%2C%22fr-CA%22%2C%22hu%22%2C%22it%22%2C%22lt%22%2C%22lv%22%2C%22nb%22%2C%22nl%22%2C%22pl%22%2C%22pt%22%2C%22pt-BR%22%2C%22sk%22%2C%22sv%22%5D%7D%2C%22APP%22%3A%7B%22environment%22%3A%22production%22%2C%22name%22%3A%22teamtailor%22%2C%22version%22%3A%222dfc50003fbc2c01431e0d48f271d31d5c6ad6e3%22%7D%2C%22flashMessageDefaults%22%3A%7B%22timeout%22%3A8000%2C%22types%22%3A%5B%22alert%22%2C%22notice%22%2C%22error%22%2C%22success%22%5D%2C%22preventDuplicates%22%3Atrue%7D%2C%22ML_DATASET%22%3A%22candidates_tabular%22%2C%22INSIGHTS_HOST_URL%22%3A%22https://teamtailor-insights.herokuapp.com%22%2C%22fontawesome%22%3A%7B%22defaultPrefix%22%3A%22far%22%7D%2C%22phoneInput%22%3A%7B%22lazyLoad%22%3Atrue%7D%2C%22unsplash%22%3A%7B%22application_id%22%3A%2229e7cf1ff5447e279be9f59e88ed5e9c4ba581f52ca8cde82cec27fa2c6d5fca%22%2C%22name%22%3A%22Teamtailor%22%7D%2C%22ziggeo%22%3A%7B%22token%22%3A%22r179274a3cb589e0fc30579033fe8f5a%22%7D%2C%22ember-google-maps%22%3A%7B%22key%22%3A%22AIzaSyCme7zQZiVmMj3Dmd64Mx0_SDvq2yGwvPo%22%2C%22language%22%3A%22en%22%2C%22protocol%22%3A%22https%22%2C%22version%22%3A%22quarterly%22%2C%22libraries%22%3A%5B%22places%22%5D%2C%22src%22%3A%22https%3A%2F%2Fmaps.googleapis.com%2Fmaps%2Fapi%2Fjs%3Fv%3Dquarterly%26libraries%3Dplaces%26language%3Den%26key%3DAIzaSyCme7zQZiVmMj3Dmd64Mx0_SDvq2yGwvPo%22%7D%2C%22contentful%22%3A%7B%22space%22%3A%22v31t20gefs31%22%2C%22accessToken%22%3A%223d76308055ad3abeb04df785a15c3be40157f8598da6089d57dbaa5d303bcedb%22%7D%2C%22pusher%22%3A%7B%22key%22%3A%22522f3251c4ca0ea81a38%22%2C%22cluster%22%3A%22eu%22%7D%2C%22hainesattract%22%3A%7B%22systemIdentifier%22%3A%22Teamtailor%22%2C%22postUrl%22%3A%22https://haineslink.co.nz/Pages/HttpPostReceiver.aspx%22%7D%2C%22intercom%22%3A%7B%22appId%22%3A%22c3b2d8b8e567c16a39d8495a5b1b2b3865dd4dc7%22%2C%22enabled%22%3Atrue%2C%22userProperties%22%3A%7B%22createdAtProp%22%3A%22createdAt%22%2C%22emailProp%22%3A%22email%22%2C%22nameProp%22%3A%22name%22%2C%22userHashProp%22%3A%22hash%22%2C%22userIdProp%22%3A%22id%22%7D%7D%2C%22facebook%22%3A%7B%22appId%22%3Anull%7D%2C%22indeed%22%3A%7B%22atsKey%22%3A%22H2W7M4A7D7%22%7D%2C%22giphyApiKey%22%3A%22HBTZzZBU1Ttio%22%2C%22hrflow%22%3A%7B%22apiUrl%22%3A%22https://api.hrflow.ai%22%2C%22sourceKey%22%3A%22881001123049ae2ed62cd47d43b16270048a06ff%22%2C%22xApiKey%22%3A%22ask_da541b30c9b261c3f37202d531a8b986%22%2C%22accountEmail%22%3A%22dev@teamtailor.com%22%7D%2C%22headwayAccount%22%3A%22AxMbw7%22%2C%22ember-cli-mirage%22%3A%7B%22enabled%22%3Afalse%2C%22usingProxy%22%3Afalse%2C%22useDefaultPassthroughs%22%3Atrue%7D%2C%22ember-cli-app-version%22%3A%7B%22version%22%3A%222dfc50003fbc2c01431e0d48f271d31d5c6ad6e3%22%7D%2C%22stripe%22%3A%7B%22publishableKey%22%3A%22pk_live_2xJqFVvBxZ0IIqXGNmfunkPZ%22%7D%2C%22scripts_host%22%3A%22https%3A%2F%2Fscripts.teamtailor-cdn.com%2Fwidgets%2Feu-pink%22%2C%22EMOJI_JSON_URL%22%3A%22https://assets.teamtailor-cdn.com/extras%2Femojis.json%22%2C%22ifa%22%3A%7B%22enabled%22%3Atrue%2C%22inline%22%3Afalse%7D%7D">
+<script type="text/javascript">if (window.performance && window.performance.mark) {
+  window.performance.mark('@sentry/ember:initial-load-start');
+}
+</script>
+<meta name="ember-cli-ifa:assetMap" content="%22https%3A%2F%2Fassets.teamtailor-cdn.com%2Fassets%2Fember%2Fassets%2FassetMap-58c6d9e836779cf588016126e254113b.json%22">
+
+      <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Intl.~locale.ar,Intl.~locale.az,Intl.~locale.da,Intl.~locale.de,Intl.~locale.en,Intl.~locale.en-GB,Intl.~locale.es,Intl.~locale.et,Intl.~locale.fi,Intl.~locale.fr,Intl.~locale.fr-CA,Intl.~locale.hu,Intl.~locale.it,Intl.~locale.lt,Intl.~locale.lv,Intl.~locale.nl,Intl.~locale.no,Intl.~locale.pl,Intl.~locale.pt,Intl.~locale.pt-BR,Intl.~locale.sk,Intl.~locale.sv"></script>
+    
+
+    <link rel="stylesheet" href="https://scripts.cdn.teamtailor.com/commons/ziggeo-v1-r34.gz.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+
+    
+
+    <link rel="stylesheet" href="https://assets.teamtailor-cdn.com/assets/ember/assets/vendor-4adc5b6399841fbe08bc919427f8339e.css">
+<link rel="stylesheet" href="https://assets.teamtailor-cdn.com/assets/ember/assets/chunk.143.d0d60b82dd797a6f47f7.css">
+    <link rel="stylesheet" href="https://assets.teamtailor-cdn.com/assets/ember/assets/teamtailor-8bb937df2bb66ec9c0e0ff804e6e9ad7.css">
+
+    <style>
+      body:not(.loading) .loading-bg {
+        opacity: 0;
+        transition: opacity 400ms ease-out;
+      }
+    </style>
+
+    
+  </head>
+
+  <body class="theme-light body-text bg-canvas font-sans text-neutral antialiased ember-application">
+    <noscript> Hi! Please enable javascript to use teamtailor! </noscript>
+    
+    <script src="https://assets.teamtailor-cdn.com/assets/ember/assets/vendor-ca200788bf6614c71dbdfe984672499e.js"></script>
+<script src="https://assets.teamtailor-cdn.com/assets/ember/assets/chunk.192.91bb4d80dd3bd5f31a8a.js"></script>
+<script src="https://assets.teamtailor-cdn.com/assets/ember/assets/chunk.143.d0d60b82dd797a6f47f7.js"></script>
+    <script src="https://assets.teamtailor-cdn.com/assets/ember/assets/teamtailor-6deabe4022d9616eea8dffd642160736.js"></script>
+
+    <script type="text/javascript">if (window.performance && window.performance.mark) {
+  window.performance.mark('@sentry/ember:initial-load-end');
+}
+</script>
+<div id="ember-basic-dropdown-wormhole"></div>
+<script>!function(){"use strict";let e=[],r=[];"serviceWorker"in navigator&&navigator.serviceWorker.register("/sw.js",{scope:"/"}).then((function(r){let t=Promise.resolve();for(let n=0,o=e.length;n<o;n++)t=t.then((function(){return e[n](r)}));return t.then((function(){console.log("Service Worker registration succeeded. Scope is "+r.scope)}))})).catch((function(e){let t=Promise.resolve();for(let n=0,o=r.length;n<o;n++)t=t.then((function(){return r[n](e)}));return t.then((function(){console.log("Service Worker registration failed with "+e)}))}))}();
+//# sourceMappingURL=sw-registration.map</script>
+
+    <script src="https://js.pusher.com/8.0/pusher.min.js"></script>
+  
+
+
+
+<!---->
+<div id="alert-box-wrapper" class="fixed z-alert">
+<!----></div>
+
+<!---->
+
+<div id="ember4" class="ember-view"><div class="u-overflow--hidden">
+      <div id="ember6" class="ember-view animated-container" style="">
+      
+      
+
+  
+    </div>
+
+</div></div>
+
+<div class="application-page isolate">
+  <div class="application-page__content
+      ">
+      <!---->
+<!---->
+
+<!---->
+<!---->
+<!---->  <div class="id-nav-bar relative z-aboveSidebarShadow flex h-56 items-center gap-20 bg-canvas px-12 print:hidden">
+  <a id="ember12" class="ember-view flex h-32 min-w-[32px] rounded-10 bg-brand-primary NavBar__logo_1jwnfe" title="Return to dashboard" href="/companies/thAPQbZDwJI/dashboard">
+    <div class="right relative z-aboveSidebarShadow grid h-32 w-32 place-items-center rounded-10 bg-action-strong shadow-[0_1px_2px_rgba(0,0,0,0.12),inset_0_0_0_1px_rgba(0,0,0,0.05)]">
+  <svg class="w-16 shrink-0" viewBox="0 0 28 30" xmlns="http://www.w3.org/2000/svg"><path d="M3.887 30.002c.278-.095.68-.308 1.205-.638.737-.463 1.42-.959 2.048-1.492.628-.53 1.07-.986 1.32-1.364.251-.377.036-.48-.646-.308-.683.172-.925-.266-.727-1.312.197-1.046.754-2.444 1.67-4.193.916-1.75 2.156-3.73 3.718-5.942C14.038 12.54 15.88 10.32 18 8.09c.18-.206.251-.429.216-.67a1.962 1.962 0 0 0-.297-.745 3.53 3.53 0 0 0-.646-.746 5.579 5.579 0 0 0-.835-.617 75.904 75.904 0 0 1 5.227.076c1.688.086 3.216.215 4.581.387.359.034.673-.172.943-.617.27-.446.477-.978.62-1.595a7.13 7.13 0 0 0 .19-1.826c-.02-.6-.154-1.037-.405-1.312-.217-.206-.863-.334-1.94-.386-1.079-.051-2.417-.051-4.015 0-1.6.051-3.333.172-5.2.36-1.87.19-3.692.42-5.47.695-1.78.274-3.405.6-4.878.978-1.474.377-2.587.789-3.342 1.234-.215.103-.377.377-.485.823s-.116.892-.026 1.338c.089.446.287.806.592 1.08.305.275.763.309 1.375.104 1.113-.377 2.514-.67 4.203-.875a63.655 63.655 0 0 1 5.443-.41c-.755.582-1.617 1.457-2.587 2.622a63.663 63.663 0 0 0-3.018 3.962 71.602 71.602 0 0 0-3.017 4.656 117.847 117.847 0 0 0-2.64 4.656c-.792 1.474-1.42 2.795-1.887 3.961C.233 26.389 0 27.247 0 27.795c0 .103.116.283.35.54.233.258.53.515.89.772.358.257.753.48 1.185.669.237.103.464.179.68.226z" fill="#fff"></path></svg>
+</div>
+  </a>
+  <div class="id-nav-holder relative flex flex-1 items-center">
+    <ul class="id-always-included flex gap-8">
+        <li class="id-nav-item align-center flex">
+          <a id="ember13" class="ember-view id-nav-list-item NavBar__navItemlink_1jwnfe" href="/companies/thAPQbZDwJI/jobs">Jobs</a>
+        </li>
+
+        <li class="id-nav-item align-center flex">
+          <a id="ember14" class="ember-view id-nav-list-item NavBar__navItemlink_1jwnfe" href="/companies/thAPQbZDwJI/candidates/segment/all">Candidates</a>
+        </li>
+        <li class="id-nav-item align-center flex">
+          <a id="ember15" class="ember-view id-nav-list-item NavBar__navItemlink_1jwnfe" href="/companies/thAPQbZDwJI/nurture-campaigns">Nurture</a>
+        </li>
+        <li class="id-nav-item align-center flex">
+          <a id="ember16" class="ember-view id-nav-list-item NavBar__navItemlink_1jwnfe" href="/companies/thAPQbZDwJI/surveys">Surveys</a>
+        </li>
+        <li class="id-nav-item align-center flex">
+            <a id="ember17" class="ember-view id-nav-list-item NavBar__navItemlink_1jwnfe" href="/companies/thAPQbZDwJI/content?site=83385">Content</a>
+        </li>
+        <li class="id-nav-item align-center flex">
+          <a id="ember18" class="ember-view active id-nav-list-item NavBar__navItemlink_1jwnfe" href="/companies/thAPQbZDwJI/analytics">Analytics</a>
+        </li>
+<!---->
+        <li class="id-nav-item align-center flex">
+          <a id="ember19" class="ember-view id-nav-list-item NavBar__navItemlink_1jwnfe" href="/companies/thAPQbZDwJI/employees">Employees</a>
+        </li>
+    </ul>
+  </div>
+  <div class="id-controls flex items-center gap-20">
+<!---->    <div class="id-tools flex gap-16">
+    <button aria-label="Quick navigation (⌘K)" class="h-32 w-32 rounded-8 text-14 font-medium leading-none inline-flex items-center justify-center shadow-none hover:bg-action-weak-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pink-500/50 border border-solid border-transparent bg-transparent text-action-weak appear-as-text ember-tooltip-target" type="false">
+    
+  <span class="inline-flex items-center justify-center w-24 h-24 text-[20px] text-icon-neutral">
+    <svg class="svg-inline--fa fa-magnifying-glass fa-fw" data-prefix="far" data-icon="magnifying-glass" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M368 208A160 160 0 1 0 48 208a160 160 0 1 0 320 0zM337.1 371.1C301.7 399.2 256.8 416 208 416C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208c0 48.8-16.8 93.7-44.9 129.1L505 471c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L337.1 371.1z"></path>
+    </svg>
+  
+<!----></span>
+    <div id="ember20" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+
+  </button>
+
+
+  <div class="relative">
+      <a aria-label="To-do’s" class="h-32 w-32 rounded-8 text-14 font-medium leading-none inline-flex items-center justify-center shadow-none hover:bg-action-weak-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pink-500/50 border border-solid border-transparent bg-transparent text-action-weak appear-as-text ember-tooltip-target" href="/companies/thAPQbZDwJI/analytics?toolbox=todos%2Cmy%2Cdue">
+    
+  <span class="inline-flex items-center justify-center w-24 h-24 text-[20px] text-icon-neutral">
+    <svg class="svg-inline--fa fa-circle-check fa-fw" data-prefix="far" data-icon="circle-check" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"></path>
+    </svg>
+  
+<!----></span>
+    <div id="ember21" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+
+  </a>
+
+<!---->  </div>
+
+  <div class="relative">
+      <a aria-label="Messages" class="h-32 w-32 rounded-8 text-14 font-medium leading-none inline-flex items-center justify-center shadow-none hover:bg-action-weak-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pink-500/50 border border-solid border-transparent bg-transparent text-action-weak appear-as-text ember-tooltip-target" href="/companies/thAPQbZDwJI/analytics?toolbox=messages%2Cmy%2Call">
+    
+  <span class="inline-flex items-center justify-center w-24 h-24 text-[20px] text-icon-neutral">
+    <svg class="svg-inline--fa fa-comment fa-fw" data-prefix="far" data-icon="comment" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M123.6 391.3c12.9-9.4 29.6-11.8 44.6-6.4c26.5 9.6 56.2 15.1 87.8 15.1c124.7 0 208-80.5 208-160s-83.3-160-208-160S48 160.5 48 240c0 32 12.4 62.8 35.7 89.2c8.6 9.7 12.8 22.5 11.8 35.5c-1.4 18.1-5.7 34.7-11.3 49.4c17-7.9 31.1-16.7 39.4-22.7zM21.2 431.9c1.8-2.7 3.5-5.4 5.1-8.1c10-16.6 19.5-38.4 21.4-62.9C17.7 326.8 0 285.1 0 240C0 125.1 114.6 32 256 32s256 93.1 256 208s-114.6 208-256 208c-37.1 0-72.3-6.4-104.1-17.9c-11.9 8.7-31.3 20.6-54.3 30.6c-15.1 6.6-32.3 12.6-50.1 16.1c-.8 .2-1.6 .3-2.4 .5c-4.4 .8-8.7 1.5-13.2 1.9c-.2 0-.5 .1-.7 .1c-5.1 .5-10.2 .8-15.3 .8c-6.5 0-12.3-3.9-14.8-9.9c-2.5-6-1.1-12.8 3.4-17.4c4.1-4.2 7.8-8.7 11.3-13.5c1.7-2.3 3.3-4.6 4.8-6.9c.1-.2 .2-.3 .3-.5z"></path>
+    </svg>
+  
+<!----></span>
+    <div id="ember22" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+
+  </a>
+
+<!---->  </div>
+
+  <div class="relative">
+      <a aria-label="Meetings" class="h-32 w-32 rounded-8 text-14 font-medium leading-none inline-flex items-center justify-center shadow-none hover:bg-action-weak-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pink-500/50 border border-solid border-transparent bg-transparent text-action-weak appear-as-text ember-tooltip-target" href="/companies/thAPQbZDwJI/analytics?toolbox=meetings%2Cmy%2Call">
+    
+  <span class="inline-flex items-center justify-center w-24 h-24 text-[20px] text-icon-neutral">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="w-full h-full"><path fill="currentColor" d="M273 192c-11.046 0-20 8.954-20 20s8.954 20 20 20 20-8.954 20-20-8.954-20-20-20zm93.998 0c-11.043 0-20 8.954-20 20s8.957 20 20 20c11.047 0 20-8.954 20-20s-8.953-20-20-20zM440 212c0-11.046 8.954-20 20-20s20 8.954 20 20-8.954 20-20 20-20-8.954-20-20zm-260 56c-11.046 0-20 8.954-20 20s8.954 20 20 20 20-8.954 20-20-8.954-20-20-20zm73 20c0-11.046 8.954-20 20-20s20 8.954 20 20-8.954 20-20 20-20-8.954-20-20zm113.998-20c-11.043 0-20 8.954-20 20s8.957 20 20 20c11.047 0 20-8.954 20-20s-8.953-20-20-20zM440 288c0-11.046 8.954-20 20-20s20 8.954 20 20-8.954 20-20 20-20-8.954-20-20zm-260 56c-11.046 0-20 8.954-20 20s8.954 20 20 20 20-8.954 20-20-8.954-20-20-20zm73 20c0-11.046 8.954-20 20-20s20 8.954 20 20-8.954 20-20 20-20-8.954-20-20zm113.998-20c-11.043 0-20 8.954-20 20s8.957 20 20 20c11.047 0 20-8.954 20-20s-8.953-20-20-20zM64 96c0-35.346 28.654-64 64-64h384c35.347 0 64 28.654 64 64v320c0 35.347-28.653 64-64 64H128c-35.346 0-64-28.653-64-64V96zm464 48H112v268.8c0 10.605 8.596 19.2 19.2 19.2h377.6c10.605 0 19.2-8.595 19.2-19.2V144z"></path></svg>
+
+<!----></span>
+    <div id="ember23" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+
+  </a>
+
+<!---->  </div>
+
+  <div class="">
+      
+      <div id="ember25" class="ember-view ember-basic-dropdown-trigger
+      
+      
+      
+      " tabindex="-1" role="button" data-ebd-id="ember24-trigger" aria-owns="ember-basic-dropdown-content-ember24" aria-controls="ember-basic-dropdown-content-ember24" aria-expanded="false" aria-disabled="false">
+    
+      <div class="relative">
+          <button aria-label="Notifications" class="h-32 w-32 rounded-8 text-14 font-medium leading-none inline-flex items-center justify-center shadow-none hover:bg-action-weak-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pink-500/50 border border-solid border-transparent bg-transparent text-action-weak appear-as-text ember-tooltip-target" type="false">
+    
+  <span class="inline-flex items-center justify-center w-24 h-24 text-[20px] text-icon-neutral">
+    <svg class="svg-inline--fa fa-bell fa-fw" data-prefix="far" data-icon="bell" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path fill="currentColor" d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v25.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm0 96c61.9 0 112 50.1 112 112v25.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V208c0-61.9 50.1-112 112-112zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"></path>
+    </svg>
+  
+<!----></span>
+    <div id="ember26" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+
+  </button>
+
+<!---->      </div>
+    
+  </div>
+
+      <div id="ember-basic-dropdown-content-ember24" class="ember-basic-dropdown-content-placeholder" style="display: none;"></div>
+
+  
+
+</div>
+
+<!----></div>
+    <div class="flex items-center gap-4">
+            
+      <button class="font-medium max-w-full Button__root_1ytjkr Button__appearance--tertiary_1ytjkr Button__size--medium_1ytjkr id-company-menu appear-as-text" aria-controls="listbox-ember27" aria-expanded="false" aria-haspopup="menu" id="trigger-ember27" data-intercom-target="Company menu" aria-label="Workspace menu" type="button">
+    
+
+        <div class="-ml-4 mr-8 id-company-thumbnail inline-flex h-24 w-24 flex-shrink-0 items-center justify-center rounded bg-darkgray text-center text-16 text-white selection:text-white" style="background-color: #000000" aria-hidden="true">
+  <span>B</span>
+</div>
+
+<!---->
+        <span class="truncate">
+  Basic Technology Vietnam
+</span>
+
+<!---->
+<!---->
+        <span class="inline-flex ml-auto">
+          <span class="inline-flex items-center justify-center w-16 h-16 text-[14px] Button__icon_1ytjkr Button__icon--right_1ytjkr">
+    <svg class="svg-inline--fa fa-chevron-down fa-fw" data-prefix="far" data-icon="chevron-down" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M239 401c9.4 9.4 24.6 9.4 33.9 0L465 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-175 175L81 175c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9L239 401z"></path>
+    </svg>
+  
+<!----></span>
+        </span>
+
+<!---->
+<!---->    
+  </button>
+
+<!---->  
+
+
+<!---->
+            
+      <button class="font-medium max-w-full Button__root_1ytjkr Button__appearance--tertiary_1ytjkr Button__size--medium_1ytjkr id-account-menu appear-as-text" aria-controls="listbox-ember29" aria-expanded="false" aria-haspopup="menu" id="trigger-ember29" data-intercom-target="Account menu" aria-label="Profile and more" type="button">
+    
+
+        <div class="flex-shrink-0 rounded w-24 h-24 text-10 bg-decorative-red-weak -ml-6 mr-2" data-size="24" aria-hidden="true">
+    <img src="//robohash.org/2168009" title="Louis Pham" alt="Louis Pham" class="h-full w-full rounded">
+<!----><!----></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+        <span class="inline-flex ml-auto">
+          <span class="inline-flex items-center justify-center w-16 h-16 text-[14px] Button__icon_1ytjkr Button__icon--right_1ytjkr">
+    <svg class="svg-inline--fa fa-chevron-down fa-fw" data-prefix="far" data-icon="chevron-down" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M239 401c9.4 9.4 24.6 9.4 33.9 0L465 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-175 175L81 175c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9L239 401z"></path>
+    </svg>
+  
+<!----></span>
+        </span>
+
+<!---->
+<!---->    
+  </button>
+
+<!---->  
+
+
+<!---->
+    </div>
+  </div>
+</div>
+<!----><div>
+<!----></div>
+<!---->
+
+<!---->
+
+<div class="reports-content Analytics__root_1t0l21">
+  <div class="l-wrapper pb-0 print:m-0 print:max-w-none print:p-0">
+    <h1 class="u-margin-bottom--base pt-8 print:hidden">Analytics</h1>
+
+    <nav class="flex flex-col gap-24 md:flex-row print:hidden">
+  
+      
+      <a id="ember1703" class="ember-view !text-action !border-pink-500 text-neutral border-b-2 border-transparent hover:border-zinc-350 hover:text-neutral leading-big" href="/companies/thAPQbZDwJI/analytics">
+        
+        Overview
+      
+      </a>
+
+
+      
+      <a id="ember1704" class="ember-view text-neutral border-b-2 border-transparent hover:border-zinc-350 hover:text-neutral leading-big" href="/companies/thAPQbZDwJI/analytics/jobs">
+        
+        Jobs
+      
+      </a>
+
+
+        
+      <a id="ember1705" class="ember-view text-neutral border-b-2 border-transparent hover:border-zinc-350 hover:text-neutral leading-big" href="/companies/thAPQbZDwJI/analytics/employees">
+        
+          Employees
+        
+      </a>
+
+
+        
+      <a id="ember1706" class="ember-view text-neutral border-b-2 border-transparent hover:border-zinc-350 hover:text-neutral leading-big flex items-center gap-4" href="/companies/thAPQbZDwJI/analytics/custom-reports">
+        
+          Custom reports
+            <span class="inline-flex max-w-full items-center justify-center gap-4 whitespace-nowrap rounded-full font-medium leading-[initial] h-24 min-w-[24px] px-8 text-12 text-decorative-amber-weak bg-decorative-amber-weak">
+    
+
+      <span class="truncate">
+        New
+      </span>
+
+<!----></span>
+        
+      </a>
+
+    
+</nav>
+
+    <!---->
+<section class="reports-section overview.index">
+  <div class="report-visuals">
+    <div class="l-two-columns u-overflow--visible p-reports">
+      <div class="main-col mb-[90px] mt-24 !pt-0">
+<!---->
+<!---->
+<!---->
+<!---->
+          <div class="report-header">
+  <div class="mb-16">
+  <div class="flex items-center  print:hidden">
+    <div class="flex flex-wrap items-center gap-8 [&amp;>*>*]:mr-0">
+<!---->
+            
+      <button class="font-medium max-w-full Button__root_1ytjkr Button__appearance--secondary_1ytjkr Button__size--medium_1ytjkr print:invisible appear-as-text" aria-controls="listbox-ember1707" aria-expanded="false" aria-haspopup="menu" id="trigger-ember1707" type="button">
+    
+
+<!---->
+        <span class="inline-flex items-center justify-center w-20 h-20 text-[16px] transition-colors  Button__icon_1ytjkr Button__icon--left_1ytjkr">
+    <svg class="svg-inline--fa fa-plus fa-fw" data-prefix="far" data-icon="plus" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path fill="currentColor" d="M248 72c0-13.3-10.7-24-24-24s-24 10.7-24 24V232H40c-13.3 0-24 10.7-24 24s10.7 24 24 24H200V440c0 13.3 10.7 24 24 24s24-10.7 24-24V280H408c13.3 0 24-10.7 24-24s-10.7-24-24-24H248V72z"></path>
+    </svg>
+  
+<!----></span>
+
+        <span class="truncate">
+  Add job filter
+</span>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->    
+  </button>
+
+<!---->  
+
+
+<!---->
+    </div>
+
+      <span class="inline-flex max-w-full items-center justify-center gap-4 whitespace-nowrap rounded-full font-medium leading-[initial] h-32 min-w-[32px] px-10 text-14 text-decorative-zinc-weak bg-decorative-zinc-weak ml-8">
+    
+
+      <span class="truncate">
+        7 jobs
+      </span>
+
+<!----></span>
+  </div>
+
+<!----></div>
+
+  <div class="Card__root_1kkjkp mb-64 bg-zinc-50 shadow-none">
+    
+  <div class="m-12 flex flex-col">
+    <div>
+      <h3 class="heading-4 mb-14">Current pipeline</h3>
+    </div>
+
+    <div class="mb-24 flex">
+      <div class="grid
+          w-3/4
+          grid-cols-3">
+          <div class="flex flex-col">
+  <div class="flex items-center">
+    <span class="inline-flex items-center justify-center w-16 h-16 text-[14px]">
+    <svg class="svg-inline--fa fa-briefcase-blank fa-fw" data-prefix="far" data-icon="briefcase-blank" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M176 56V96H336V56c0-4.4-3.6-8-8-8H184c-4.4 0-8 3.6-8 8zM128 96V56c0-30.9 25.1-56 56-56H328c30.9 0 56 25.1 56 56V96h64c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64zm232 48H152 64c-8.8 0-16 7.2-16 16V416c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V160c0-8.8-7.2-16-16-16H360z"></path>
+    </svg>
+  
+<!----></span>
+    <span class="ml-8 font-bold">7</span>
+  </div>
+  <div class="body-text-s opacity-75">
+    Active jobs
+  </div>
+</div>
+
+<div class="flex flex-col">
+  <div class="flex items-center">
+    <span class="inline-flex items-center justify-center w-16 h-16 text-[14px]">
+    <svg class="svg-inline--fa fa-user fa-fw" data-prefix="far" data-icon="user" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path fill="currentColor" d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"></path>
+    </svg>
+  
+<!----></span>
+    <span class="ml-8 font-bold">26</span>
+  </div>
+  <div class="body-text-s opacity-75">
+    Total applications
+  </div>
+</div>
+
+<div class="flex flex-col">
+  <div class="flex items-center">
+    <span class="inline-flex items-center justify-center w-16 h-16 text-[14px]">
+    <svg class="svg-inline--fa fa-ban fa-fw" data-prefix="far" data-icon="ban" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M385.1 419.1L92.9 126.9C64.8 162.3 48 207.2 48 256c0 114.9 93.1 208 208 208c48.8 0 93.7-16.8 129.1-44.9zm33.9-33.9C447.2 349.7 464 304.8 464 256c0-114.9-93.1-208-208-208c-48.8 0-93.7 16.8-129.1 44.9L419.1 385.1zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path>
+    </svg>
+  
+<!----></span>
+    <span class="ml-8 font-bold">0</span>
+  </div>
+  <div class="body-text-s opacity-75">
+    Rejected
+  </div>
+</div>
+      </div>
+
+      <div class="grid
+          w-1/4
+          grid-flow-col grid-cols-1">
+        <!---->
+<!---->
+      </div>
+    </div>
+
+    <div class="flex flex-grow">
+          <div class="flex w-full flex-col items-center pb-12 pt-12 first:rounded-l-6 last:rounded-r-6 bg-decorative-blue-weak text-decorative-blue-weak">
+    <div class="font-bold">
+      26
+    </div>
+    <div>
+      Inbox
+    </div>
+  </div>
+
+    <div class="flex w-full flex-col items-center pb-12 pt-12 first:rounded-l-6 last:rounded-r-6 hidden bg-decorative-zinc-weak text-decorative-zinc-weak">
+    <div class="font-bold">
+      0
+    </div>
+    <div>
+      In process
+    </div>
+  </div>
+
+    <div class="flex w-full flex-col items-center pb-12 pt-12 first:rounded-l-6 last:rounded-r-6 bg-decorative-orange-weak text-decorative-orange-weak">
+    <div class="font-bold">
+      0
+    </div>
+    <div>
+      Screening
+    </div>
+  </div>
+
+    <div class="flex w-full flex-col items-center pb-12 pt-12 first:rounded-l-6 last:rounded-r-6 bg-decorative-purple-weak text-decorative-purple-weak">
+    <div class="font-bold">
+      0
+    </div>
+    <div>
+      Interview
+    </div>
+  </div>
+
+    <div class="flex w-full flex-col items-center pb-12 pt-12 first:rounded-l-6 last:rounded-r-6 bg-decorative-yellow-weak text-decorative-yellow-weak">
+    <div class="font-bold">
+      0
+    </div>
+    <div>
+      Offer
+    </div>
+  </div>
+
+
+    </div>
+
+<!---->  </div>
+
+</div>
+
+  <div class="flex items-center justify-between ember-tooltip-target">
+    <h3>
+      Audience
+    </h3>
+
+    <button class="flex items-center DatePicker__trigger_17wdh6 FilterForm__trigger_1uimny FilterForm__trigger--valid_1uimny" type="button">
+  <span class="inline-flex items-center justify-center w-20 h-20 text-[16px] mr-8">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="w-full h-full"><path fill="currentColor" d="M273 192c-11.046 0-20 8.954-20 20s8.954 20 20 20 20-8.954 20-20-8.954-20-20-20zm93.998 0c-11.043 0-20 8.954-20 20s8.957 20 20 20c11.047 0 20-8.954 20-20s-8.953-20-20-20zM440 212c0-11.046 8.954-20 20-20s20 8.954 20 20-8.954 20-20 20-20-8.954-20-20zm-260 56c-11.046 0-20 8.954-20 20s8.954 20 20 20 20-8.954 20-20-8.954-20-20-20zm73 20c0-11.046 8.954-20 20-20s20 8.954 20 20-8.954 20-20 20-20-8.954-20-20zm113.998-20c-11.043 0-20 8.954-20 20s8.957 20 20 20c11.047 0 20-8.954 20-20s-8.953-20-20-20zM440 288c0-11.046 8.954-20 20-20s20 8.954 20 20-8.954 20-20 20-20-8.954-20-20zm-260 56c-11.046 0-20 8.954-20 20s8.954 20 20 20 20-8.954 20-20-8.954-20-20-20zm73 20c0-11.046 8.954-20 20-20s20 8.954 20 20-8.954 20-20 20-20-8.954-20-20zm113.998-20c-11.043 0-20 8.954-20 20s8.957 20 20 20c11.047 0 20-8.954 20-20s-8.953-20-20-20zM64 96c0-35.346 28.654-64 64-64h384c35.347 0 64 28.654 64 64v320c0 35.347-28.653 64-64 64H128c-35.346 0-64-28.653-64-64V96zm464 48H112v268.8c0 10.605 8.596 19.2 19.2 19.2h377.6c10.605 0 19.2-8.595 19.2-19.2V144z"></path></svg>
+
+<!----></span>
+
+    See data for past 28 days
+</button>
+<div id="ember1709" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+  </div>
+</div>
+
+<!---->
+
+  <div class="Grid__grid_1x0s4z Grid__gridCols_1x0s4z Grid__gridGap_1x0s4z mb-64">
+  
+    <div class="Cell__gridSpan--four_h7ptwv Cell__setHeight_h7ptwv">
+  
+      <div class="Card__root_1kkjkp Card__hover_1kkjkp relative flex h-full max-h-[470px] overflow-hidden p-0">
+    
+    <a id="ember1776" class="ember-view flex grow p-16  max-w-full" href="/companies/thAPQbZDwJI/analytics/visitors">
+      <div class="flex min-w-0 max-w-full flex-1 flex-col">
+        <div class="mb-8 flex justify-between text-neutral">
+          <div>
+            <div class="group flex items-center gap-8">
+    <h2 class="Heading__root_1h9ofj Heading__regular_1h9ofj" title="Career site visits">
+      Career site visits
+    </h2>
+
+<!---->
+  
+</div>
+
+              
+    <div class="mb-16 mt-8 flex items-center">
+  <div class="group flex items-center gap-8">
+    <h2 class="Heading__root_1h9ofj Heading__chartCompare_1h9ofj mr-0" title="1 visits">
+      1 visits
+    </h2>
+
+<!---->
+  
+</div>
+
+<!----></div>
+  
+          </div>
+
+<!---->        </div>
+
+          <div class="absolute right-16 top-16">
+              
+      <button class="font-medium max-w-full Button__root_1ytjkr Button__appearance--secondary_1ytjkr Button__size--medium_1ytjkr Button__iconOnly_1ytjkr invisible appear-as-text ember-tooltip-target" type="button">
+    
+
+<!---->
+        <span class="inline-flex items-center justify-center w-20 h-20 text-[16px] transition-colors  Button__icon_1ytjkr">
+    <svg class="svg-inline--fa fa-chart-area fa-fw" data-prefix="far" data-icon="chart-area" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M48 56c0-13.3-10.7-24-24-24S0 42.7 0 56V408c0 39.8 32.2 72 72 72H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H72c-13.3 0-24-10.7-24-24V56zM286.1 225.9c9 9 21.2 14.1 33.9 14.1s24.9-5.1 33.9-14.1l27.3-27.3L432 257.8l0 78.2H144l0-92.1 80-80 62.1 62.1zM320 192l-33.9-33.9-39.4-39.4c-12.5-12.5-32.8-12.5-45.3 0l-91.3 91.3c-9 9-14.1 21.2-14.1 33.9V352c0 17.7 14.3 32 32 32H448c17.7 0 32-14.3 32-32V257.8c0-11.5-4.1-22.5-11.6-31.2l-62-72.3c-12.1-14.2-33.7-15-46.9-1.8l-5.6 5.6L320 192z"></path>
+    </svg>
+  
+<!----></span>
+
+<!---->
+<!---->
+<!---->
+<!---->
+        <div id="ember1778" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+
+<!---->    
+  </button>
+
+<!---->  
+
+          </div>
+
+<!---->
+          
+    <div class="h-full">
+      <div class="mb-8 mb-16">
+  <div>
+  <div class="overflow-hidden" data-highcharts-chart="10" data-render-state="settled" style="overflow: hidden;"><div id="highcharts-bvykt4q-364" dir="ltr" style="position: relative; overflow: hidden; width: 722px; height: 250px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); user-select: none; touch-action: manipulation; outline: none; font-size: 14px;" class="highcharts-container "><svg version="1.1" class="highcharts-root" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px;" xmlns="http://www.w3.org/2000/svg" width="722" height="250" viewBox="0 0 722 250" role="img" aria-label=""><desc>Created with Highcharts 11.2.0</desc><defs><filter id="highcharts-drop-shadow-10"><feDropShadow dx="1" dy="1" flood-color="#000000" flood-opacity="0.75" stdDeviation="2.5"></feDropShadow></filter><clipPath id="highcharts-bvykt4q-365-"><rect x="0" y="0" width="716" height="249" fill="none"></rect></clipPath><clipPath id="highcharts-bvykt4q-394-"><rect x="0" y="0" width="716" height="249" fill="none"></rect></clipPath><linearGradient x1="0" y1="0" x2="0" y2="200" gradientUnits="userSpaceOnUse" id="highcharts-bvykt4q-397"><stop offset="0" stop-color="rgb(244,63,133)" stop-opacity="0.4"></stop><stop offset="1" stop-color="rgb(244,63,133)" stop-opacity="0"></stop></linearGradient></defs><rect fill="transparent" class="highcharts-background" filter="none" x="0" y="0" width="722" height="250" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="6" y="0" width="716" height="249" filter="none"></rect><g class="highcharts-pane-group" data-z-index="0"></g><g class="highcharts-grid highcharts-xaxis-grid" data-z-index="1"><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 12.5 0 L 12.5 249" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 142.5 0 L 142.5 249" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 272.5 0 L 272.5 249" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 402.5 0 L 402.5 249" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 532.5 0 L 532.5 249" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 662.5 0 L 662.5 249" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid" data-z-index="1"><path fill="none" stroke="#eeeff2" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 6 249.5 L 722 249.5" opacity="1"></path><path fill="none" stroke="#eeeff2" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 6 199.5 L 722 199.5" opacity="1"></path><path fill="none" stroke="#eeeff2" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 6 149.5 L 722 149.5" opacity="1"></path><path fill="none" stroke="#eeeff2" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 6 100.5 L 722 100.5" opacity="1"></path><path fill="none" stroke="#eeeff2" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 6 50.5 L 722 50.5" opacity="1"></path><path fill="none" stroke="#eeeff2" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 6 -0.5 L 722 -0.5" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" data-z-index="1" stroke="#cccccc" stroke-width="0" x="6" y="0" width="716" height="249"></rect><g class="highcharts-axis highcharts-xaxis" data-z-index="2"><path fill="none" class="highcharts-tick" stroke="#333333" stroke-width="1" d="M 12.5 249 L 12.5 250" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#333333" stroke-width="1" d="M 142.5 249 L 142.5 250" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#333333" stroke-width="1" d="M 272.5 249 L 272.5 250" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#333333" stroke-width="1" d="M 402.5 249 L 402.5 250" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#333333" stroke-width="1" d="M 532.5 249 L 532.5 250" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#333333" stroke-width="1" d="M 662.5 249 L 662.5 250" opacity="1"></path><path fill="none" class="highcharts-axis-line" stroke="#eeeff2" stroke-width="1" data-z-index="7" d="M 6 249.5 L 722 249.5"></path></g><g class="highcharts-axis highcharts-yaxis" data-z-index="2"><path fill="none" class="highcharts-axis-line" stroke="transparent" stroke-width="1" data-z-index="7" d="M 5.5 0 L 5.5 249"></path></g><g class="highcharts-series-group" data-z-index="3" filter="none"><g class="highcharts-series highcharts-series-0 highcharts-areaspline-series highcharts-color-0" data-z-index="0.1" opacity="1" transform="translate(6,0) scale(1 1)" clip-path="url(#highcharts-bvykt4q-394-)"><path fill="url(#highcharts-bvykt4q-397)" d="M 7.0196078431373 249 C 7.0196078431373 249 22.61873638344212 249 33.018155410312 249 C 43.417574437182 249 48.617283950617 249 59.016702977487 249 C 69.41612200435699 249 74.615831517792 249 85.015250544662 249 C 95.41466957153321 249 100.6143790849688 249 111.01379811184 249 C 121.413217138708 249 126.61292665214201 249 137.01234567901 249 C 147.411764705882 249 152.611474219318 249 163.01089324619 249 C 173.41031227305797 249 178.61002178649198 249 189.00944081336 249 C 199.40885984023197 249 204.608569353668 249 215.00798838054 249 C 225.40740740740802 249 230.607116920842 249 241.00653594771 249 C 251.405954974582 249 256.605664488018 249 267.00508351489 249 C 277.404502541758 249 282.60421205519197 249 293.00363108206 249 C 303.403050108932 249 308.602759622368 249 319.00217864924 249 C 329.40159767610805 249 334.601307189542 249 345.00072621641 249 C 355.400145243282 249 360.599854756718 249 370.99927378359 249 C 381.398692810458 249 386.59840232389195 249 396.99782135076 249 C 407.397240377632 249 412.596949891068 249 422.99636891794 249 C 433.39578794480803 249 438.59549745824205 249 448.99491648511 249 C 459.394335511982 249 464.59404502541804 249 474.99346405229 249 C 485.392883079158 249 490.592592592592 249 500.99201161946 249 C 511.39143064633197 249 516.591140159768 249 526.99055918664 249 C 537.389978213508 249 542.589687726942 249 552.98910675381 249 C 563.388525780682 249 568.588235294118 249 578.98765432099 249 C 589.3870733478581 249 594.586782861292 249 604.98620188816 249 C 615.3856209150321 249 620.585330428468 249 630.98474945534 249 C 641.384168482208 249 646.583877995642 49.80000000000001 656.98329702251 49.80000000000001 C 667.382716049382 49.80000000000001 672.582425562818 249 682.98184458969 249 C 693.381263616558 249 708.98039215686 249 708.98039215686 249 L 708.98039215686 249 C 708.98039215686 249 693.381263616558 249 682.98184458969 249 C 672.582425562818 249 667.382716049382 249 656.98329702251 249 C 646.583877995642 249 641.384168482208 249 630.98474945534 249 C 620.585330428468 249 615.3856209150321 249 604.98620188816 249 C 594.586782861292 249 589.3870733478581 249 578.98765432099 249 C 568.588235294118 249 563.388525780682 249 552.98910675381 249 C 542.589687726942 249 537.389978213508 249 526.99055918664 249 C 516.591140159768 249 511.39143064633197 249 500.99201161946 249 C 490.592592592592 249 485.392883079158 249 474.99346405229 249 C 464.59404502541804 249 459.394335511982 249 448.99491648511 249 C 438.59549745824205 249 433.39578794480803 249 422.99636891794 249 C 412.596949891068 249 407.397240377632 249 396.99782135076 249 C 386.59840232389195 249 381.398692810458 249 370.99927378359 249 C 360.599854756718 249 355.400145243282 249 345.00072621641 249 C 334.601307189542 249 329.40159767610805 249 319.00217864924 249 C 308.602759622368 249 303.403050108932 249 293.00363108206 249 C 282.60421205519197 249 277.404502541758 249 267.00508351489 249 C 256.605664488018 249 251.405954974582 249 241.00653594771 249 C 230.607116920842 249 225.40740740740802 249 215.00798838054 249 C 204.608569353668 249 199.40885984023197 249 189.00944081336 249 C 178.61002178649198 249 173.41031227305797 249 163.01089324619 249 C 152.611474219318 249 147.411764705882 249 137.01234567901 249 C 126.61292665214201 249 121.413217138708 249 111.01379811184 249 C 100.6143790849688 249 95.41466957153321 249 85.015250544662 249 C 74.615831517792 249 69.41612200435699 249 59.016702977487 249 C 48.617283950617 249 43.417574437182 249 33.018155410312 249 C 22.61873638344212 249 7.0196078431373 249 7.0196078431373 249 Z" class="highcharts-area" data-z-index="0"></path><path fill="none" d="M 7.0196078431373 249 C 7.0196078431373 249 22.61873638344212 249 33.018155410312 249 C 43.417574437182 249 48.617283950617 249 59.016702977487 249 C 69.41612200435699 249 74.615831517792 249 85.015250544662 249 C 95.41466957153321 249 100.6143790849688 249 111.01379811184 249 C 121.413217138708 249 126.61292665214201 249 137.01234567901 249 C 147.411764705882 249 152.611474219318 249 163.01089324619 249 C 173.41031227305797 249 178.61002178649198 249 189.00944081336 249 C 199.40885984023197 249 204.608569353668 249 215.00798838054 249 C 225.40740740740802 249 230.607116920842 249 241.00653594771 249 C 251.405954974582 249 256.605664488018 249 267.00508351489 249 C 277.404502541758 249 282.60421205519197 249 293.00363108206 249 C 303.403050108932 249 308.602759622368 249 319.00217864924 249 C 329.40159767610805 249 334.601307189542 249 345.00072621641 249 C 355.400145243282 249 360.599854756718 249 370.99927378359 249 C 381.398692810458 249 386.59840232389195 249 396.99782135076 249 C 407.397240377632 249 412.596949891068 249 422.99636891794 249 C 433.39578794480803 249 438.59549745824205 249 448.99491648511 249 C 459.394335511982 249 464.59404502541804 249 474.99346405229 249 C 485.392883079158 249 490.592592592592 249 500.99201161946 249 C 511.39143064633197 249 516.591140159768 249 526.99055918664 249 C 537.389978213508 249 542.589687726942 249 552.98910675381 249 C 563.388525780682 249 568.588235294118 249 578.98765432099 249 C 589.3870733478581 249 594.586782861292 249 604.98620188816 249 C 615.3856209150321 249 620.585330428468 249 630.98474945534 249 C 641.384168482208 249 646.583877995642 49.80000000000001 656.98329702251 49.80000000000001 C 667.382716049382 49.80000000000001 672.582425562818 249 682.98184458969 249 C 693.381263616558 249 708.98039215686 249 708.98039215686 249" class="highcharts-graph" data-z-index="1" stroke="#F43F85" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" filter="none"></path><path fill="none" d="M 7.0196078431373 249 C 7.0196078431373 249 22.61873638344212 249 33.018155410312 249 C 43.417574437182 249 48.617283950617 249 59.016702977487 249 C 69.41612200435699 249 74.615831517792 249 85.015250544662 249 C 95.41466957153321 249 100.6143790849688 249 111.01379811184 249 C 121.413217138708 249 126.61292665214201 249 137.01234567901 249 C 147.411764705882 249 152.611474219318 249 163.01089324619 249 C 173.41031227305797 249 178.61002178649198 249 189.00944081336 249 C 199.40885984023197 249 204.608569353668 249 215.00798838054 249 C 225.40740740740802 249 230.607116920842 249 241.00653594771 249 C 251.405954974582 249 256.605664488018 249 267.00508351489 249 C 277.404502541758 249 282.60421205519197 249 293.00363108206 249 C 303.403050108932 249 308.602759622368 249 319.00217864924 249 C 329.40159767610805 249 334.601307189542 249 345.00072621641 249 C 355.400145243282 249 360.599854756718 249 370.99927378359 249 C 381.398692810458 249 386.59840232389195 249 396.99782135076 249 C 407.397240377632 249 412.596949891068 249 422.99636891794 249 C 433.39578794480803 249 438.59549745824205 249 448.99491648511 249 C 459.394335511982 249 464.59404502541804 249 474.99346405229 249 C 485.392883079158 249 490.592592592592 249 500.99201161946 249 C 511.39143064633197 249 516.591140159768 249 526.99055918664 249 C 537.389978213508 249 542.589687726942 249 552.98910675381 249 C 563.388525780682 249 568.588235294118 249 578.98765432099 249 C 589.3870733478581 249 594.586782861292 249 604.98620188816 249 C 615.3856209150321 249 620.585330428468 249 630.98474945534 249 C 641.384168482208 249 646.583877995642 49.80000000000001 656.98329702251 49.80000000000001 C 667.382716049382 49.80000000000001 672.582425562818 249 682.98184458969 249 C 693.381263616558 249 708.98039215686 249 708.98039215686 249" data-z-index="2" class="highcharts-tracker-line" stroke-linecap="round" stroke-linejoin="round" stroke="rgba(192,192,192,0.0001)" stroke-width="22"></path></g><g class="highcharts-markers highcharts-series-0 highcharts-areaspline-series highcharts-color-0 highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(6,0) scale(1 1)" clip-path="none"></g></g><text x="361" text-anchor="middle" class="highcharts-title" data-z-index="4" style="font-size: 1.2em; color: rgb(51, 51, 51); font-weight: bold; fill: rgb(51, 51, 51);" y="12"></text><text x="361" text-anchor="middle" class="highcharts-subtitle" data-z-index="4" style="color: rgb(102, 102, 102); font-size: 0.8em; fill: rgb(102, 102, 102);" y="13"></text><text x="0" text-anchor="start" class="highcharts-caption" data-z-index="4" style="color: rgb(102, 102, 102); font-size: 0.8em; fill: rgb(102, 102, 102);" y="261"></text><g class="highcharts-axis-labels highcharts-xaxis-labels" data-z-index="7"></g><g class="highcharts-axis-labels highcharts-yaxis-labels" data-z-index="7"><text x="21" text-anchor="end" transform="translate(0,0)" style="color: rgb(153, 153, 153); cursor: default; font-size: 11px; fill: rgb(153, 153, 153);" y="244" opacity="1">0</text><text x="21" text-anchor="end" transform="translate(0,0)" style="color: rgb(153, 153, 153); cursor: default; font-size: 11px; fill: rgb(153, 153, 153);" y="194" opacity="1">0.25</text><text x="21" text-anchor="end" transform="translate(0,0)" style="color: rgb(153, 153, 153); cursor: default; font-size: 11px; fill: rgb(153, 153, 153);" y="144" opacity="1">0.5</text><text x="21" text-anchor="end" transform="translate(0,0)" style="color: rgb(153, 153, 153); cursor: default; font-size: 11px; fill: rgb(153, 153, 153);" y="95" opacity="1">0.75</text><text x="21" text-anchor="end" transform="translate(0,0)" style="color: rgb(153, 153, 153); cursor: default; font-size: 11px; fill: rgb(153, 153, 153);" y="45" opacity="1">1</text><text x="21" text-anchor="end" transform="translate(0,0)" style="color: rgb(153, 153, 153); cursor: default; font-size: 11px; fill: rgb(153, 153, 153);" y="-5" opacity="1">1.25</text></g></svg></div></div>
+</div>
+</div>
+
+    <div class="body-text-xs mb-24 flex w-full justify-between leading-header px-8">
+  <time class="flex text-neutral">
+    Jan 25
+  </time>
+
+  <time class="text-neutral">
+    Feb 21
+  </time>
+</div>
+<!---->
+    </div>
+  
+      </div>
+<!---->    </a>
+
+  
+
+</div>
+    
+</div>
+
+    <div class="Cell__gridSpan--two_h7ptwv Cell__setHeight_h7ptwv">
+  
+      <div class="Card__root_1kkjkp Card__hover_1kkjkp relative flex h-full max-h-[470px] overflow-hidden p-0">
+    
+    <a id="ember1788" class="ember-view flex grow p-16  max-w-full" href="/companies/thAPQbZDwJI/analytics/mobile">
+      <div class="flex min-w-0 max-w-full flex-1 flex-col">
+        <div class="mb-8 flex justify-between text-neutral">
+          <div>
+            <div class="group flex items-center gap-8">
+    <h2 class="Heading__root_1h9ofj Heading__regular_1h9ofj" title="Devices">
+      Devices
+    </h2>
+
+<!---->
+  
+</div>
+
+<!---->          </div>
+
+<!---->        </div>
+
+          <div class="absolute right-16 top-16">
+              
+      <button class="font-medium max-w-full Button__root_1ytjkr Button__appearance--secondary_1ytjkr Button__size--medium_1ytjkr Button__iconOnly_1ytjkr invisible appear-as-text ember-tooltip-target" type="button">
+    
+
+<!---->
+        <span class="inline-flex items-center justify-center w-20 h-20 text-[16px] transition-colors  Button__icon_1ytjkr">
+    <svg class="svg-inline--fa fa-chart-area fa-fw" data-prefix="far" data-icon="chart-area" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M48 56c0-13.3-10.7-24-24-24S0 42.7 0 56V408c0 39.8 32.2 72 72 72H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H72c-13.3 0-24-10.7-24-24V56zM286.1 225.9c9 9 21.2 14.1 33.9 14.1s24.9-5.1 33.9-14.1l27.3-27.3L432 257.8l0 78.2H144l0-92.1 80-80 62.1 62.1zM320 192l-33.9-33.9-39.4-39.4c-12.5-12.5-32.8-12.5-45.3 0l-91.3 91.3c-9 9-14.1 21.2-14.1 33.9V352c0 17.7 14.3 32 32 32H448c17.7 0 32-14.3 32-32V257.8c0-11.5-4.1-22.5-11.6-31.2l-62-72.3c-12.1-14.2-33.7-15-46.9-1.8l-5.6 5.6L320 192z"></path>
+    </svg>
+  
+<!----></span>
+
+<!---->
+<!---->
+<!---->
+<!---->
+        <div id="ember1790" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+
+<!---->    
+  </button>
+
+<!---->  
+
+          </div>
+
+<!---->
+          
+    <div class="mb-0 flex flex-1 flex-wrap items-center justify-between justify-items-stretch">
+      <div class="flex min-w-[200px] flex-1 items-center justify-center">
+        <div class="min-w-[200px]">
+          <div>
+  <div class="overflow-hidden" data-highcharts-chart="12" data-render-state="settled" style="overflow: hidden;"><div id="highcharts-bvykt4q-402" dir="ltr" style="position: relative; overflow: hidden; width: 200px; height: 210px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); user-select: none; touch-action: manipulation; outline: none; font-size: 14px;" class="highcharts-container "><svg version="1.1" class="highcharts-root" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px;" xmlns="http://www.w3.org/2000/svg" width="200" height="210" viewBox="0 0 200 210" role="img" aria-label=""><desc>Created with Highcharts 11.2.0</desc><defs><filter id="highcharts-drop-shadow-12"><feDropShadow dx="1" dy="1" flood-color="#000000" flood-opacity="0.75" stdDeviation="2.5"></feDropShadow></filter><clipPath id="highcharts-bvykt4q-404-"><rect x="0" y="0" width="180" height="185" fill="none"></rect></clipPath></defs><rect fill="transparent" class="highcharts-background" filter="none" x="0" y="0" width="200" height="210" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="10" y="10" width="180" height="185" filter="none"></rect><g class="highcharts-pane-group" data-z-index="0"></g><rect fill="none" class="highcharts-plot-border" data-z-index="1" stroke="#cccccc" stroke-width="0" x="10" y="10" width="180" height="185"></rect><g class="highcharts-series-group" data-z-index="3" filter="none"><g class="highcharts-series highcharts-series-0 highcharts-pie-series highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(10,10) scale(1 1)" filter="none" clip-path="none"><path fill="#f43f85" d="M 89.98228043127853 5.500001804500684 A 87 87 0 1 1 89.87915874538777 5.500083923079643 M 89.93957937269388 49.00004196153982 A 43.5 43.5 0 1 0 89.99114021563926 49.00000090225034" transform="translate(0,0)" stroke="transparent" stroke-width="1" opacity="1" stroke-linejoin="round" class="highcharts-point highcharts-color-0"></path></g><g class="highcharts-markers highcharts-series-0 highcharts-pie-series" data-z-index="0.1" opacity="1" transform="translate(10,10) scale(1 1)" clip-path="none"></g></g><text x="100" text-anchor="middle" class="highcharts-title" data-z-index="4" style="font-size: 1.2em; color: rgb(51, 51, 51); font-weight: bold; fill: rgb(51, 51, 51);" y="22"></text><text x="100" text-anchor="middle" class="highcharts-subtitle" data-z-index="4" style="color: rgb(102, 102, 102); font-size: 0.8em; fill: rgb(102, 102, 102);" y="23"></text><text x="10" text-anchor="start" class="highcharts-caption" data-z-index="4" style="color: rgb(102, 102, 102); font-size: 0.8em; fill: rgb(102, 102, 102);" y="206"></text></svg></div></div>
+</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="Legend__root_4i9wn">
+  <ul class="flex list-inside list-square flex-wrap flex-col">
+        <div>
+          <div class="flex items-center">
+            <div class="bg-charts-color-0
+                mr-8
+                h-8
+                w-8">&nbsp;</div>
+            <div class=" Legend__label_4i9wn">
+                <span class="Legend__labelText_4i9wn">
+                  
+            <span class="body-text-xs block overflow-hidden text-ellipsis whitespace-nowrap text-neutral">
+              <span>
+                <strong>
+                  100.0%
+                </strong>
+                Desktop
+              </span>
+            </span>
+          
+                </span>
+            </div>
+          </div>
+            <div class="ml-16">
+              
+            <span class="body-text-xs text-neutral-medium">
+              1 visits
+            </span>
+          
+            </div>
+        </div>
+  </ul>
+</div>
+      </div>
+    </div>
+  
+      </div>
+<!---->    </a>
+
+  
+
+</div>
+    
+</div>
+
+    <div class="Cell__gridSpan--two_h7ptwv Cell__setHeight_h7ptwv">
+  
+      <div class="Card__root_1kkjkp Card__hover_1kkjkp relative flex h-full max-h-[470px] overflow-hidden p-0">
+    
+    <a id="ember1753" class="ember-view flex grow p-16  max-w-full" href="/companies/thAPQbZDwJI/analytics/sources">
+      <div class="flex min-w-0 max-w-full flex-1 flex-col">
+        <div class="mb-8 flex justify-between text-neutral">
+          <div>
+            <div class="group flex items-center gap-8">
+    <h2 class="Heading__root_1h9ofj Heading__regular_1h9ofj" title="Sources">
+      Sources
+    </h2>
+
+<!---->
+  
+</div>
+
+<!---->          </div>
+
+<!---->        </div>
+
+          <div class="absolute right-16 top-16">
+              
+      <button class="font-medium max-w-full Button__root_1ytjkr Button__appearance--secondary_1ytjkr Button__size--medium_1ytjkr Button__iconOnly_1ytjkr invisible appear-as-text ember-tooltip-target" type="button">
+    
+
+<!---->
+        <span class="inline-flex items-center justify-center w-20 h-20 text-[16px] transition-colors  Button__icon_1ytjkr">
+    <svg class="svg-inline--fa fa-chart-area fa-fw" data-prefix="far" data-icon="chart-area" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M48 56c0-13.3-10.7-24-24-24S0 42.7 0 56V408c0 39.8 32.2 72 72 72H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H72c-13.3 0-24-10.7-24-24V56zM286.1 225.9c9 9 21.2 14.1 33.9 14.1s24.9-5.1 33.9-14.1l27.3-27.3L432 257.8l0 78.2H144l0-92.1 80-80 62.1 62.1zM320 192l-33.9-33.9-39.4-39.4c-12.5-12.5-32.8-12.5-45.3 0l-91.3 91.3c-9 9-14.1 21.2-14.1 33.9V352c0 17.7 14.3 32 32 32H448c17.7 0 32-14.3 32-32V257.8c0-11.5-4.1-22.5-11.6-31.2l-62-72.3c-12.1-14.2-33.7-15-46.9-1.8l-5.6 5.6L320 192z"></path>
+    </svg>
+  
+<!----></span>
+
+<!---->
+<!---->
+<!---->
+<!---->
+        <div id="ember1755" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+
+<!---->    
+  </button>
+
+<!---->  
+
+          </div>
+
+<!---->
+          
+    <div class="mb-0 flex flex-1 flex-wrap items-center justify-between justify-items-stretch">
+      <div class="flex min-w-[210px] flex-1 items-center justify-center">
+        <div class="min-w-[210px]">
+          <div>
+  <div class="overflow-hidden" data-highcharts-chart="6" data-render-state="settled" style="overflow: hidden;"><div id="highcharts-bvykt4q-188" dir="ltr" style="position: relative; overflow: hidden; width: 210px; height: 210px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); user-select: none; touch-action: manipulation; outline: none; font-size: 14px;" class="highcharts-container "><svg version="1.1" class="highcharts-root" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px;" xmlns="http://www.w3.org/2000/svg" width="210" height="210" viewBox="0 0 210 210" role="img" aria-label=""><desc>Created with Highcharts 11.2.0</desc><defs><filter id="highcharts-drop-shadow-6"><feDropShadow dx="1" dy="1" flood-color="#000000" flood-opacity="0.75" stdDeviation="2.5"></feDropShadow></filter><clipPath id="highcharts-bvykt4q-190-"><rect x="0" y="0" width="190" height="185" fill="none"></rect></clipPath></defs><rect fill="transparent" class="highcharts-background" filter="none" x="0" y="0" width="210" height="210" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="10" y="10" width="190" height="185" filter="none"></rect><g class="highcharts-pane-group" data-z-index="0"></g><rect fill="none" class="highcharts-plot-border" data-z-index="1" stroke="#cccccc" stroke-width="0" x="10" y="10" width="190" height="185"></rect><g class="highcharts-series-group" data-z-index="3" filter="none"><g class="highcharts-series highcharts-series-0 highcharts-pie-series highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(10,10) scale(1 1)" filter="none" clip-path="none"><path fill="#f43f85" d="M 94.98131298356097 0.750001903022266 A 91.75 91.75 0 1 1 94.87256109068193 0.7500885050868646 M 94.93628054534096 46.62504425254343 A 45.875 45.875 0 1 0 94.99065649178048 46.62500095151113" transform="translate(0,0)" stroke="transparent" stroke-width="1" opacity="1" stroke-linejoin="round" class="highcharts-point highcharts-color-0"></path></g><g class="highcharts-markers highcharts-series-0 highcharts-pie-series" data-z-index="0.1" opacity="1" transform="translate(10,10) scale(1 1)" clip-path="none"></g></g><text x="105" text-anchor="middle" class="highcharts-title" data-z-index="4" style="font-size: 1.2em; color: rgb(51, 51, 51); font-weight: bold; fill: rgb(51, 51, 51);" y="22"></text><text x="105" text-anchor="middle" class="highcharts-subtitle" data-z-index="4" style="color: rgb(102, 102, 102); font-size: 0.8em; fill: rgb(102, 102, 102);" y="23"></text><text x="10" text-anchor="start" class="highcharts-caption" data-z-index="4" style="color: rgb(102, 102, 102); font-size: 0.8em; fill: rgb(102, 102, 102);" y="206"></text></svg></div></div>
+</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="Legend__root_4i9wn">
+  <ul class="flex list-inside list-square flex-wrap flex-col">
+        <div>
+          <div class="flex items-center">
+            <div class="bg-charts-color-0
+                mr-8
+                h-8
+                w-8">&nbsp;</div>
+            <div class=" Legend__label_4i9wn">
+                <span class="Legend__labelText_4i9wn">
+                  
+    <span class="flex w-[160px] items-center overflow-hidden text-ellipsis whitespace-nowrap ember-tooltip-target">
+      <span class="mr-4">
+        <strong>
+          100.0%
+        </strong>
+        No source
+      </span>
+      <div id="ember1756" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+
+        <span class="flex items-center text-neutral-weak hover:text-neutral-medium ember-tooltip-target">
+          <span class="inline-flex items-center justify-center w-20 h-20 text-[16px]">
+    <svg class="svg-inline--fa fa-circle-info fa-fw" data-prefix="far" data-icon="circle-info" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24h-8V248c0-13.3-10.7-24-24-24H216c-13.3 0-24 10.7-24 24s10.7 24 24 24h24v64H216zm40-144a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"></path>
+    </svg>
+  
+<!----></span>
+          <div id="ember1757" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+        </span>
+    </span>
+
+                </span>
+            </div>
+          </div>
+<!---->        </div>
+  </ul>
+</div>
+      </div>
+    </div>
+  
+      </div>
+<!---->    </a>
+
+  
+
+</div>
+    
+</div>
+
+    <div class="Cell__gridSpan--four_h7ptwv Cell__setHeight_h7ptwv">
+  
+      <div class="Card__root_1kkjkp relative flex h-full max-h-[470px] overflow-hidden p-0">
+    
+    <a id="ember1785" class="ember-view flex grow p-16  max-w-full" href="/companies/thAPQbZDwJI/analytics/promotions">
+      <div class="flex min-w-0 max-w-full flex-1 flex-col">
+        <div class="mb-8 flex justify-between text-neutral">
+          <div>
+            <div class="group flex items-center gap-8">
+    <h2 class="Heading__root_1h9ofj Heading__regular_1h9ofj" title="Promotions">
+      Promotions
+    </h2>
+
+<!---->
+  
+</div>
+
+<!---->          </div>
+
+<!---->        </div>
+
+          <div class="absolute right-16 top-16">
+              
+      <button class="font-medium max-w-full Button__root_1ytjkr Button__appearance--secondary_1ytjkr Button__size--medium_1ytjkr Button__iconOnly_1ytjkr invisible appear-as-text ember-tooltip-target" type="button">
+    
+
+<!---->
+        <span class="inline-flex items-center justify-center w-20 h-20 text-[16px] transition-colors  Button__icon_1ytjkr">
+    <svg class="svg-inline--fa fa-chart-area fa-fw" data-prefix="far" data-icon="chart-area" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M48 56c0-13.3-10.7-24-24-24S0 42.7 0 56V408c0 39.8 32.2 72 72 72H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H72c-13.3 0-24-10.7-24-24V56zM286.1 225.9c9 9 21.2 14.1 33.9 14.1s24.9-5.1 33.9-14.1l27.3-27.3L432 257.8l0 78.2H144l0-92.1 80-80 62.1 62.1zM320 192l-33.9-33.9-39.4-39.4c-12.5-12.5-32.8-12.5-45.3 0l-91.3 91.3c-9 9-14.1 21.2-14.1 33.9V352c0 17.7 14.3 32 32 32H448c17.7 0 32-14.3 32-32V257.8c0-11.5-4.1-22.5-11.6-31.2l-62-72.3c-12.1-14.2-33.7-15-46.9-1.8l-5.6 5.6L320 192z"></path>
+    </svg>
+  
+<!----></span>
+
+<!---->
+<!---->
+<!---->
+<!---->
+        <div id="ember1787" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+
+<!---->    
+  </button>
+
+<!---->  
+
+          </div>
+
+<!---->
+            <div class="mx-auto flex flex-1 max-w-[400px] min-h-[400px] text-center">
+  <div class="self-center w-full">
+      <span class="inline-flex items-center justify-center w-48 h-48 text-[38px] flex justify-center items-center rounded-full mb-16 bg-decorative-neutral-weak !w-[88px] !h-[88px]
+          mb-16">
+    <svg class="svg-inline--fa fa-star fa-fw" data-prefix="far" data-icon="star" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+        <path fill="currentColor" d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"></path>
+    </svg>
+  
+<!----></span>
+
+<!---->
+    <div class="body-text
+        text-neutral-medium">
+      
+              <span class="text-neutral">
+                  No data yet.
+              </span>
+            
+    </div>
+
+<!---->  </div>
+</div>
+      </div>
+<!---->    </a>
+
+  
+
+</div>
+    
+</div>
+  
+</div>
+
+  <h3 class="mb-24">
+    Recruitment
+  </h3>
+
+  <div class="Grid__grid_1x0s4z Grid__gridCols_1x0s4z Grid__gridGap_1x0s4z mb-64">
+  
+    <div class="Cell__gridSpan--three_h7ptwv Cell__setHeight_h7ptwv">
+  
+      <div class="Card__root_1kkjkp Card__hover_1kkjkp relative flex h-full max-h-[470px] overflow-hidden p-0">
+    
+    <a id="ember1714" class="ember-view flex grow p-16  max-w-full" href="/companies/thAPQbZDwJI/analytics/pipeline-overview">
+      <div class="flex min-w-0 max-w-full flex-1 flex-col">
+        <div class="mb-8 flex justify-between text-neutral">
+          <div>
+            <div class="group flex items-center gap-8">
+    <h2 class="Heading__root_1h9ofj Heading__regular_1h9ofj" title="Pipeline overview">
+      Pipeline overview
+    </h2>
+
+<!---->
+  
+</div>
+
+<!---->          </div>
+
+<!---->        </div>
+
+          <div class="absolute right-16 top-16">
+              
+      <button class="font-medium max-w-full Button__root_1ytjkr Button__appearance--secondary_1ytjkr Button__size--medium_1ytjkr Button__iconOnly_1ytjkr invisible appear-as-text ember-tooltip-target" type="button">
+    
+
+<!---->
+        <span class="inline-flex items-center justify-center w-20 h-20 text-[16px] transition-colors  Button__icon_1ytjkr">
+    <svg class="svg-inline--fa fa-chart-area fa-fw" data-prefix="far" data-icon="chart-area" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M48 56c0-13.3-10.7-24-24-24S0 42.7 0 56V408c0 39.8 32.2 72 72 72H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H72c-13.3 0-24-10.7-24-24V56zM286.1 225.9c9 9 21.2 14.1 33.9 14.1s24.9-5.1 33.9-14.1l27.3-27.3L432 257.8l0 78.2H144l0-92.1 80-80 62.1 62.1zM320 192l-33.9-33.9-39.4-39.4c-12.5-12.5-32.8-12.5-45.3 0l-91.3 91.3c-9 9-14.1 21.2-14.1 33.9V352c0 17.7 14.3 32 32 32H448c17.7 0 32-14.3 32-32V257.8c0-11.5-4.1-22.5-11.6-31.2l-62-72.3c-12.1-14.2-33.7-15-46.9-1.8l-5.6 5.6L320 192z"></path>
+    </svg>
+  
+<!----></span>
+
+<!---->
+<!---->
+<!---->
+<!---->
+        <div id="ember1716" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+
+<!---->    
+  </button>
+
+<!---->  
+
+          </div>
+
+<!---->
+          
+    <div class="relative mb-4">
+    <div class="relative z-[1]">
+      <div>
+  <div class="overflow-hidden" data-highcharts-chart="7" data-render-state="settled" style="overflow: hidden;"><div id="highcharts-bvykt4q-191" dir="ltr" style="position: relative; overflow: hidden; width: 528px; height: 300px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); user-select: none; touch-action: manipulation; outline: none; font-size: 14px;" class="highcharts-container "><svg version="1.1" class="highcharts-root" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px;" xmlns="http://www.w3.org/2000/svg" width="528" height="300" viewBox="0 0 528 300" role="img" aria-label=""><desc>Created with Highcharts 11.2.0</desc><defs><filter id="highcharts-drop-shadow-7"><feDropShadow dx="1" dy="1" flood-color="#000000" flood-opacity="0.75" stdDeviation="2.5"></feDropShadow></filter><clipPath id="highcharts-bvykt4q-192-"><rect x="0" y="0" width="500" height="270" fill="none"></rect></clipPath><clipPath id="highcharts-bvykt4q-221-"><rect x="0" y="0" width="500" height="270" fill="none"></rect></clipPath></defs><rect fill="transparent" class="highcharts-background" filter="none" x="0" y="0" width="528" height="300" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="28" y="15" width="500" height="270" filter="none"></rect><g class="highcharts-pane-group" data-z-index="0"></g><g class="highcharts-grid highcharts-xaxis-grid" data-z-index="1"><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 45.5 15 L 45.5 285" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 63.5 15 L 63.5 285" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 81.5 15 L 81.5 285" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 98.5 15 L 98.5 285" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 116.5 15 L 116.5 285" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 134.5 15 L 134.5 285" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 152.5 15 L 152.5 285" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 170.5 15 L 170.5 285" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 188.5 15 L 188.5 285" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 206.5 15 L 206.5 285" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 223.5 15 L 223.5 285" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 241.5 15 L 241.5 285" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 259.5 15 L 259.5 285" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 277.5 15 L 277.5 285" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 295.5 15 L 295.5 285" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 313.5 15 L 313.5 285" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 331.5 15 L 331.5 285" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 348.5 15 L 348.5 285" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 366.5 15 L 366.5 285" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 384.5 15 L 384.5 285" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 402.5 15 L 402.5 285" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 420.5 15 L 420.5 285" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 438.5 15 L 438.5 285" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 456.5 15 L 456.5 285" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 473.5 15 L 473.5 285" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 491.5 15 L 491.5 285" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 509.5 15 L 509.5 285" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 527.5 15 L 527.5 285" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 27.5 15 L 27.5 285" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid" data-z-index="1"><path fill="none" stroke="#F8F8F9" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 28 285.5 L 528 285.5" opacity="1"></path><path fill="none" stroke="#F8F8F9" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 28 240.5 L 528 240.5" opacity="1"></path><path fill="none" stroke="#F8F8F9" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 28 195.5 L 528 195.5" opacity="1"></path><path fill="none" stroke="#F8F8F9" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 28 150.5 L 528 150.5" opacity="1"></path><path fill="none" stroke="#F8F8F9" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 28 105.5 L 528 105.5" opacity="1"></path><path fill="none" stroke="#F8F8F9" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 28 60.5 L 528 60.5" opacity="1"></path><path fill="none" stroke="#F8F8F9" stroke-width="1" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 28 14.5 L 528 14.5" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" data-z-index="1" stroke="#cccccc" stroke-width="0" x="28" y="15" width="500" height="270"></rect><g class="highcharts-axis highcharts-xaxis" data-z-index="2"><path fill="none" class="highcharts-axis-line" stroke="#EEEFF2" stroke-width="1" data-z-index="7" d="M 28 285.5 L 528 285.5"></path></g><g class="highcharts-axis highcharts-yaxis" data-z-index="2"><path fill="none" class="highcharts-axis-line" stroke="transparent" stroke-width="1" data-z-index="7" d="M -2.5 15 L -2.5 285"></path></g><g class="highcharts-series-group" data-z-index="3" filter="none"><g class="highcharts-series highcharts-series-0 highcharts-column-series highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(28,15) scale(1 1)" clip-path="url(#highcharts-bvykt4q-221-)"><path fill="#3b82f6" d="M 5 271 L 13 271 A 3 3 0 0 1 13 271 L 13 271 A 0 0 0 0 1 13 271 L 13 271 A 0 0 0 0 1 5 271 L 5 271 A 3 3 0 0 1 5 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#3b82f6" d="M 23 271 L 31 271 A 3 3 0 0 1 31 271 L 31 271 A 0 0 0 0 1 31 271 L 31 271 A 0 0 0 0 1 23 271 L 23 271 A 3 3 0 0 1 23 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#3b82f6" d="M 40 271 L 49 271 A 3 3 0 0 1 49 271 L 49 271 A 0 0 0 0 1 49 271 L 49 271 A 0 0 0 0 1 40 271 L 40 271 A 3 3 0 0 1 40 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#3b82f6" d="M 58 271 L 67 271 A 3 3 0 0 1 67 271 L 67 271 A 0 0 0 0 1 67 271 L 67 271 A 0 0 0 0 1 58 271 L 58 271 A 3 3 0 0 1 58 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#3b82f6" d="M 76 271 L 84 271 A 3 3 0 0 1 84 271 L 84 271 A 0 0 0 0 1 84 271 L 84 271 A 0 0 0 0 1 76 271 L 76 271 A 3 3 0 0 1 76 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#3b82f6" d="M 94 271 L 102 271 A 3 3 0 0 1 102 271 L 102 271 A 0 0 0 0 1 102 271 L 102 271 A 0 0 0 0 1 94 271 L 94 271 A 3 3 0 0 1 94 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#3b82f6" d="M 112 271 L 120 271 A 3 3 0 0 1 120 271 L 120 271 A 0 0 0 0 1 120 271 L 120 271 A 0 0 0 0 1 112 271 L 112 271 A 3 3 0 0 1 112 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#3b82f6" d="M 130 271 L 138 271 A 3 3 0 0 1 138 271 L 138 271 A 0 0 0 0 1 138 271 L 138 271 A 0 0 0 0 1 130 271 L 130 271 A 3 3 0 0 1 130 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#3b82f6" d="M 148 271 L 156 271 A 3 3 0 0 1 156 271 L 156 271 A 0 0 0 0 1 156 271 L 156 271 A 0 0 0 0 1 148 271 L 148 271 A 3 3 0 0 1 148 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#3b82f6" d="M 166 271 L 174 271 A 3 3 0 0 1 174 271 L 174 271 A 0 0 0 0 1 174 271 L 174 271 A 0 0 0 0 1 166 271 L 166 271 A 3 3 0 0 1 166 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#3b82f6" d="M 183 271 L 192 271 A 3 3 0 0 1 192 271 L 192 271 A 0 0 0 0 1 192 271 L 192 271 A 0 0 0 0 1 183 271 L 183 271 A 3 3 0 0 1 183 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#3b82f6" d="M 201 271 L 209 271 A 3 3 0 0 1 209 271 L 209 271 A 0 0 0 0 1 209 271 L 209 271 A 0 0 0 0 1 201 271 L 201 271 A 3 3 0 0 1 201 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#3b82f6" d="M 219 271 L 227 271 A 3 3 0 0 1 227 271 L 227 271 A 0 0 0 0 1 227 271 L 227 271 A 0 0 0 0 1 219 271 L 219 271 A 3 3 0 0 1 219 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#3b82f6" d="M 237 271 L 245 271 A 3 3 0 0 1 245 271 L 245 271 A 0 0 0 0 1 245 271 L 245 271 A 0 0 0 0 1 237 271 L 237 271 A 3 3 0 0 1 237 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#3b82f6" d="M 255 271 L 263 271 A 3 3 0 0 1 263 271 L 263 271 A 0 0 0 0 1 263 271 L 263 271 A 0 0 0 0 1 255 271 L 255 271 A 3 3 0 0 1 255 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#3b82f6" d="M 273 271 L 281 271 A 3 3 0 0 1 281 271 L 281 271 A 0 0 0 0 1 281 271 L 281 271 A 0 0 0 0 1 273 271 L 273 271 A 3 3 0 0 1 273 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#3b82f6" d="M 291 271 L 299 271 A 3 3 0 0 1 299 271 L 299 271 A 0 0 0 0 1 299 271 L 299 271 A 0 0 0 0 1 291 271 L 291 271 A 3 3 0 0 1 291 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#3b82f6" d="M 308 271 L 317 271 A 3 3 0 0 1 317 271 L 317 271 A 0 0 0 0 1 317 271 L 317 271 A 0 0 0 0 1 308 271 L 308 271 A 3 3 0 0 1 308 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#3b82f6" d="M 326 271 L 334 271 A 3 3 0 0 1 334 271 L 334 271 A 0 0 0 0 1 334 271 L 334 271 A 0 0 0 0 1 326 271 L 326 271 A 3 3 0 0 1 326 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#3b82f6" d="M 344 271 L 352 271 A 3 3 0 0 1 352 271 L 352 271 A 0 0 0 0 1 352 271 L 352 271 A 0 0 0 0 1 344 271 L 344 271 A 3 3 0 0 1 344 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#3b82f6" d="M 362 271 L 370 271 A 3 3 0 0 1 370 271 L 370 271 A 0 0 0 0 1 370 271 L 370 271 A 0 0 0 0 1 362 271 L 362 271 A 3 3 0 0 1 362 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#3b82f6" d="M 380 271 L 388 271 A 3 3 0 0 1 388 271 L 388 271 A 0 0 0 0 1 388 271 L 388 271 A 0 0 0 0 1 380 271 L 380 271 A 3 3 0 0 1 380 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#3b82f6" d="M 398 271 L 406 271 A 3 3 0 0 1 406 271 L 406 271 A 0 0 0 0 1 406 271 L 406 271 A 0 0 0 0 1 398 271 L 398 271 A 3 3 0 0 1 398 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#3b82f6" d="M 416 271 L 424 271 A 3 3 0 0 1 424 271 L 424 271 A 0 0 0 0 1 424 271 L 424 271 A 0 0 0 0 1 416 271 L 416 271 A 3 3 0 0 1 416 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#3b82f6" d="M 433 271 L 442 271 A 3 3 0 0 1 442 271 L 442 271 A 0 0 0 0 1 442 271 L 442 271 A 0 0 0 0 1 433 271 L 433 271 A 3 3 0 0 1 433 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#3b82f6" d="M 451 271 L 459 271 A 3 3 0 0 1 459 271 L 459 271 A 0 0 0 0 1 459 271 L 459 271 A 0 0 0 0 1 451 271 L 451 271 A 3 3 0 0 1 451 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#3b82f6" d="M 469 37 L 477 37 A 3 3 0 0 1 480 40 L 480 271 A 0 0 0 0 1 480 271 L 466 271 A 0 0 0 0 1 466 271 L 466 40 A 3 3 0 0 1 469 37 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#3b82f6" d="M 487 37 L 495 37 A 3 3 0 0 1 498 40 L 498 271 A 0 0 0 0 1 498 271 L 484 271 A 0 0 0 0 1 484 271 L 484 40 A 3 3 0 0 1 487 37 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path></g><g class="highcharts-markers highcharts-series-0 highcharts-column-series" data-z-index="0.1" opacity="1" transform="translate(28,15) scale(1 1)" clip-path="none"></g><g class="highcharts-series highcharts-series-1 highcharts-column-series highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(28,15) scale(1 1)" clip-path="url(#highcharts-bvykt4q-221-)"><path fill="#71717A" d="M 5 271 L 13 271 A 3 3 0 0 1 13 271 L 13 271 A 0 0 0 0 1 13 271 L 13 271 A 0 0 0 0 1 5 271 L 5 271 A 3 3 0 0 1 5 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#71717A" d="M 23 271 L 31 271 A 3 3 0 0 1 31 271 L 31 271 A 0 0 0 0 1 31 271 L 31 271 A 0 0 0 0 1 23 271 L 23 271 A 3 3 0 0 1 23 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#71717A" d="M 40 271 L 49 271 A 3 3 0 0 1 49 271 L 49 271 A 0 0 0 0 1 49 271 L 49 271 A 0 0 0 0 1 40 271 L 40 271 A 3 3 0 0 1 40 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#71717A" d="M 58 271 L 67 271 A 3 3 0 0 1 67 271 L 67 271 A 0 0 0 0 1 67 271 L 67 271 A 0 0 0 0 1 58 271 L 58 271 A 3 3 0 0 1 58 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#71717A" d="M 76 271 L 84 271 A 3 3 0 0 1 84 271 L 84 271 A 0 0 0 0 1 84 271 L 84 271 A 0 0 0 0 1 76 271 L 76 271 A 3 3 0 0 1 76 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#71717A" d="M 94 271 L 102 271 A 3 3 0 0 1 102 271 L 102 271 A 0 0 0 0 1 102 271 L 102 271 A 0 0 0 0 1 94 271 L 94 271 A 3 3 0 0 1 94 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#71717A" d="M 112 271 L 120 271 A 3 3 0 0 1 120 271 L 120 271 A 0 0 0 0 1 120 271 L 120 271 A 0 0 0 0 1 112 271 L 112 271 A 3 3 0 0 1 112 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#71717A" d="M 130 271 L 138 271 A 3 3 0 0 1 138 271 L 138 271 A 0 0 0 0 1 138 271 L 138 271 A 0 0 0 0 1 130 271 L 130 271 A 3 3 0 0 1 130 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#71717A" d="M 148 271 L 156 271 A 3 3 0 0 1 156 271 L 156 271 A 0 0 0 0 1 156 271 L 156 271 A 0 0 0 0 1 148 271 L 148 271 A 3 3 0 0 1 148 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#71717A" d="M 166 271 L 174 271 A 3 3 0 0 1 174 271 L 174 271 A 0 0 0 0 1 174 271 L 174 271 A 0 0 0 0 1 166 271 L 166 271 A 3 3 0 0 1 166 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#71717A" d="M 183 271 L 192 271 A 3 3 0 0 1 192 271 L 192 271 A 0 0 0 0 1 192 271 L 192 271 A 0 0 0 0 1 183 271 L 183 271 A 3 3 0 0 1 183 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#71717A" d="M 201 271 L 209 271 A 3 3 0 0 1 209 271 L 209 271 A 0 0 0 0 1 209 271 L 209 271 A 0 0 0 0 1 201 271 L 201 271 A 3 3 0 0 1 201 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#71717A" d="M 219 271 L 227 271 A 3 3 0 0 1 227 271 L 227 271 A 0 0 0 0 1 227 271 L 227 271 A 0 0 0 0 1 219 271 L 219 271 A 3 3 0 0 1 219 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#71717A" d="M 237 271 L 245 271 A 3 3 0 0 1 245 271 L 245 271 A 0 0 0 0 1 245 271 L 245 271 A 0 0 0 0 1 237 271 L 237 271 A 3 3 0 0 1 237 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#71717A" d="M 255 271 L 263 271 A 3 3 0 0 1 263 271 L 263 271 A 0 0 0 0 1 263 271 L 263 271 A 0 0 0 0 1 255 271 L 255 271 A 3 3 0 0 1 255 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#71717A" d="M 273 271 L 281 271 A 3 3 0 0 1 281 271 L 281 271 A 0 0 0 0 1 281 271 L 281 271 A 0 0 0 0 1 273 271 L 273 271 A 3 3 0 0 1 273 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#71717A" d="M 291 271 L 299 271 A 3 3 0 0 1 299 271 L 299 271 A 0 0 0 0 1 299 271 L 299 271 A 0 0 0 0 1 291 271 L 291 271 A 3 3 0 0 1 291 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#71717A" d="M 308 271 L 317 271 A 3 3 0 0 1 317 271 L 317 271 A 0 0 0 0 1 317 271 L 317 271 A 0 0 0 0 1 308 271 L 308 271 A 3 3 0 0 1 308 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#71717A" d="M 326 271 L 334 271 A 3 3 0 0 1 334 271 L 334 271 A 0 0 0 0 1 334 271 L 334 271 A 0 0 0 0 1 326 271 L 326 271 A 3 3 0 0 1 326 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#71717A" d="M 344 271 L 352 271 A 3 3 0 0 1 352 271 L 352 271 A 0 0 0 0 1 352 271 L 352 271 A 0 0 0 0 1 344 271 L 344 271 A 3 3 0 0 1 344 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#71717A" d="M 362 271 L 370 271 A 3 3 0 0 1 370 271 L 370 271 A 0 0 0 0 1 370 271 L 370 271 A 0 0 0 0 1 362 271 L 362 271 A 3 3 0 0 1 362 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#71717A" d="M 380 271 L 388 271 A 3 3 0 0 1 388 271 L 388 271 A 0 0 0 0 1 388 271 L 388 271 A 0 0 0 0 1 380 271 L 380 271 A 3 3 0 0 1 380 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#71717A" d="M 398 271 L 406 271 A 3 3 0 0 1 406 271 L 406 271 A 0 0 0 0 1 406 271 L 406 271 A 0 0 0 0 1 398 271 L 398 271 A 3 3 0 0 1 398 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#71717A" d="M 416 271 L 424 271 A 3 3 0 0 1 424 271 L 424 271 A 0 0 0 0 1 424 271 L 424 271 A 0 0 0 0 1 416 271 L 416 271 A 3 3 0 0 1 416 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#71717A" d="M 433 271 L 442 271 A 3 3 0 0 1 442 271 L 442 271 A 0 0 0 0 1 442 271 L 442 271 A 0 0 0 0 1 433 271 L 433 271 A 3 3 0 0 1 433 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#71717A" d="M 451 271 L 459 271 A 3 3 0 0 1 459 271 L 459 271 A 0 0 0 0 1 459 271 L 459 271 A 0 0 0 0 1 451 271 L 451 271 A 3 3 0 0 1 451 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#71717A" d="M 469 37 L 477 37 A 3 3 0 0 1 477 37 L 477 37 A 0 0 0 0 1 477 37 L 477 37 A 0 0 0 0 1 469 37 L 469 37 A 3 3 0 0 1 469 37 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#71717A" d="M 487 37 L 495 37 A 3 3 0 0 1 495 37 L 495 37 A 0 0 0 0 1 495 37 L 495 37 A 0 0 0 0 1 487 37 L 487 37 A 3 3 0 0 1 487 37 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path></g><g class="highcharts-markers highcharts-series-1 highcharts-column-series" data-z-index="0.1" opacity="1" transform="translate(28,15) scale(1 1)" clip-path="none"></g><g class="highcharts-series highcharts-series-2 highcharts-column-series highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(28,15) scale(1 1)" clip-path="url(#highcharts-bvykt4q-221-)"><path fill="#f97316" d="M 5 271 L 13 271 A 3 3 0 0 1 13 271 L 13 271 A 0 0 0 0 1 13 271 L 13 271 A 0 0 0 0 1 5 271 L 5 271 A 3 3 0 0 1 5 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#f97316" d="M 23 271 L 31 271 A 3 3 0 0 1 31 271 L 31 271 A 0 0 0 0 1 31 271 L 31 271 A 0 0 0 0 1 23 271 L 23 271 A 3 3 0 0 1 23 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#f97316" d="M 40 271 L 49 271 A 3 3 0 0 1 49 271 L 49 271 A 0 0 0 0 1 49 271 L 49 271 A 0 0 0 0 1 40 271 L 40 271 A 3 3 0 0 1 40 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#f97316" d="M 58 271 L 67 271 A 3 3 0 0 1 67 271 L 67 271 A 0 0 0 0 1 67 271 L 67 271 A 0 0 0 0 1 58 271 L 58 271 A 3 3 0 0 1 58 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#f97316" d="M 76 271 L 84 271 A 3 3 0 0 1 84 271 L 84 271 A 0 0 0 0 1 84 271 L 84 271 A 0 0 0 0 1 76 271 L 76 271 A 3 3 0 0 1 76 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#f97316" d="M 94 271 L 102 271 A 3 3 0 0 1 102 271 L 102 271 A 0 0 0 0 1 102 271 L 102 271 A 0 0 0 0 1 94 271 L 94 271 A 3 3 0 0 1 94 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#f97316" d="M 112 271 L 120 271 A 3 3 0 0 1 120 271 L 120 271 A 0 0 0 0 1 120 271 L 120 271 A 0 0 0 0 1 112 271 L 112 271 A 3 3 0 0 1 112 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#f97316" d="M 130 271 L 138 271 A 3 3 0 0 1 138 271 L 138 271 A 0 0 0 0 1 138 271 L 138 271 A 0 0 0 0 1 130 271 L 130 271 A 3 3 0 0 1 130 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#f97316" d="M 148 271 L 156 271 A 3 3 0 0 1 156 271 L 156 271 A 0 0 0 0 1 156 271 L 156 271 A 0 0 0 0 1 148 271 L 148 271 A 3 3 0 0 1 148 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#f97316" d="M 166 271 L 174 271 A 3 3 0 0 1 174 271 L 174 271 A 0 0 0 0 1 174 271 L 174 271 A 0 0 0 0 1 166 271 L 166 271 A 3 3 0 0 1 166 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#f97316" d="M 183 271 L 192 271 A 3 3 0 0 1 192 271 L 192 271 A 0 0 0 0 1 192 271 L 192 271 A 0 0 0 0 1 183 271 L 183 271 A 3 3 0 0 1 183 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#f97316" d="M 201 271 L 209 271 A 3 3 0 0 1 209 271 L 209 271 A 0 0 0 0 1 209 271 L 209 271 A 0 0 0 0 1 201 271 L 201 271 A 3 3 0 0 1 201 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#f97316" d="M 219 271 L 227 271 A 3 3 0 0 1 227 271 L 227 271 A 0 0 0 0 1 227 271 L 227 271 A 0 0 0 0 1 219 271 L 219 271 A 3 3 0 0 1 219 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#f97316" d="M 237 271 L 245 271 A 3 3 0 0 1 245 271 L 245 271 A 0 0 0 0 1 245 271 L 245 271 A 0 0 0 0 1 237 271 L 237 271 A 3 3 0 0 1 237 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#f97316" d="M 255 271 L 263 271 A 3 3 0 0 1 263 271 L 263 271 A 0 0 0 0 1 263 271 L 263 271 A 0 0 0 0 1 255 271 L 255 271 A 3 3 0 0 1 255 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#f97316" d="M 273 271 L 281 271 A 3 3 0 0 1 281 271 L 281 271 A 0 0 0 0 1 281 271 L 281 271 A 0 0 0 0 1 273 271 L 273 271 A 3 3 0 0 1 273 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#f97316" d="M 291 271 L 299 271 A 3 3 0 0 1 299 271 L 299 271 A 0 0 0 0 1 299 271 L 299 271 A 0 0 0 0 1 291 271 L 291 271 A 3 3 0 0 1 291 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#f97316" d="M 308 271 L 317 271 A 3 3 0 0 1 317 271 L 317 271 A 0 0 0 0 1 317 271 L 317 271 A 0 0 0 0 1 308 271 L 308 271 A 3 3 0 0 1 308 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#f97316" d="M 326 271 L 334 271 A 3 3 0 0 1 334 271 L 334 271 A 0 0 0 0 1 334 271 L 334 271 A 0 0 0 0 1 326 271 L 326 271 A 3 3 0 0 1 326 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#f97316" d="M 344 271 L 352 271 A 3 3 0 0 1 352 271 L 352 271 A 0 0 0 0 1 352 271 L 352 271 A 0 0 0 0 1 344 271 L 344 271 A 3 3 0 0 1 344 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#f97316" d="M 362 271 L 370 271 A 3 3 0 0 1 370 271 L 370 271 A 0 0 0 0 1 370 271 L 370 271 A 0 0 0 0 1 362 271 L 362 271 A 3 3 0 0 1 362 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#f97316" d="M 380 271 L 388 271 A 3 3 0 0 1 388 271 L 388 271 A 0 0 0 0 1 388 271 L 388 271 A 0 0 0 0 1 380 271 L 380 271 A 3 3 0 0 1 380 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#f97316" d="M 398 271 L 406 271 A 3 3 0 0 1 406 271 L 406 271 A 0 0 0 0 1 406 271 L 406 271 A 0 0 0 0 1 398 271 L 398 271 A 3 3 0 0 1 398 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#f97316" d="M 416 271 L 424 271 A 3 3 0 0 1 424 271 L 424 271 A 0 0 0 0 1 424 271 L 424 271 A 0 0 0 0 1 416 271 L 416 271 A 3 3 0 0 1 416 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#f97316" d="M 433 271 L 442 271 A 3 3 0 0 1 442 271 L 442 271 A 0 0 0 0 1 442 271 L 442 271 A 0 0 0 0 1 433 271 L 433 271 A 3 3 0 0 1 433 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#f97316" d="M 451 271 L 459 271 A 3 3 0 0 1 459 271 L 459 271 A 0 0 0 0 1 459 271 L 459 271 A 0 0 0 0 1 451 271 L 451 271 A 3 3 0 0 1 451 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#f97316" d="M 469 37 L 477 37 A 3 3 0 0 1 477 37 L 477 37 A 0 0 0 0 1 477 37 L 477 37 A 0 0 0 0 1 469 37 L 469 37 A 3 3 0 0 1 469 37 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#f97316" d="M 487 37 L 495 37 A 3 3 0 0 1 495 37 L 495 37 A 0 0 0 0 1 495 37 L 495 37 A 0 0 0 0 1 487 37 L 487 37 A 3 3 0 0 1 487 37 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path></g><g class="highcharts-markers highcharts-series-2 highcharts-column-series" data-z-index="0.1" opacity="1" transform="translate(28,15) scale(1 1)" clip-path="none"></g><g class="highcharts-series highcharts-series-3 highcharts-column-series highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(28,15) scale(1 1)" clip-path="url(#highcharts-bvykt4q-221-)"><path fill="#a855f7" d="M 5 271 L 13 271 A 3 3 0 0 1 13 271 L 13 271 A 0 0 0 0 1 13 271 L 13 271 A 0 0 0 0 1 5 271 L 5 271 A 3 3 0 0 1 5 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#a855f7" d="M 23 271 L 31 271 A 3 3 0 0 1 31 271 L 31 271 A 0 0 0 0 1 31 271 L 31 271 A 0 0 0 0 1 23 271 L 23 271 A 3 3 0 0 1 23 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#a855f7" d="M 40 271 L 49 271 A 3 3 0 0 1 49 271 L 49 271 A 0 0 0 0 1 49 271 L 49 271 A 0 0 0 0 1 40 271 L 40 271 A 3 3 0 0 1 40 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#a855f7" d="M 58 271 L 67 271 A 3 3 0 0 1 67 271 L 67 271 A 0 0 0 0 1 67 271 L 67 271 A 0 0 0 0 1 58 271 L 58 271 A 3 3 0 0 1 58 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#a855f7" d="M 76 271 L 84 271 A 3 3 0 0 1 84 271 L 84 271 A 0 0 0 0 1 84 271 L 84 271 A 0 0 0 0 1 76 271 L 76 271 A 3 3 0 0 1 76 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#a855f7" d="M 94 271 L 102 271 A 3 3 0 0 1 102 271 L 102 271 A 0 0 0 0 1 102 271 L 102 271 A 0 0 0 0 1 94 271 L 94 271 A 3 3 0 0 1 94 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#a855f7" d="M 112 271 L 120 271 A 3 3 0 0 1 120 271 L 120 271 A 0 0 0 0 1 120 271 L 120 271 A 0 0 0 0 1 112 271 L 112 271 A 3 3 0 0 1 112 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#a855f7" d="M 130 271 L 138 271 A 3 3 0 0 1 138 271 L 138 271 A 0 0 0 0 1 138 271 L 138 271 A 0 0 0 0 1 130 271 L 130 271 A 3 3 0 0 1 130 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#a855f7" d="M 148 271 L 156 271 A 3 3 0 0 1 156 271 L 156 271 A 0 0 0 0 1 156 271 L 156 271 A 0 0 0 0 1 148 271 L 148 271 A 3 3 0 0 1 148 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#a855f7" d="M 166 271 L 174 271 A 3 3 0 0 1 174 271 L 174 271 A 0 0 0 0 1 174 271 L 174 271 A 0 0 0 0 1 166 271 L 166 271 A 3 3 0 0 1 166 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#a855f7" d="M 183 271 L 192 271 A 3 3 0 0 1 192 271 L 192 271 A 0 0 0 0 1 192 271 L 192 271 A 0 0 0 0 1 183 271 L 183 271 A 3 3 0 0 1 183 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#a855f7" d="M 201 271 L 209 271 A 3 3 0 0 1 209 271 L 209 271 A 0 0 0 0 1 209 271 L 209 271 A 0 0 0 0 1 201 271 L 201 271 A 3 3 0 0 1 201 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#a855f7" d="M 219 271 L 227 271 A 3 3 0 0 1 227 271 L 227 271 A 0 0 0 0 1 227 271 L 227 271 A 0 0 0 0 1 219 271 L 219 271 A 3 3 0 0 1 219 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#a855f7" d="M 237 271 L 245 271 A 3 3 0 0 1 245 271 L 245 271 A 0 0 0 0 1 245 271 L 245 271 A 0 0 0 0 1 237 271 L 237 271 A 3 3 0 0 1 237 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#a855f7" d="M 255 271 L 263 271 A 3 3 0 0 1 263 271 L 263 271 A 0 0 0 0 1 263 271 L 263 271 A 0 0 0 0 1 255 271 L 255 271 A 3 3 0 0 1 255 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#a855f7" d="M 273 271 L 281 271 A 3 3 0 0 1 281 271 L 281 271 A 0 0 0 0 1 281 271 L 281 271 A 0 0 0 0 1 273 271 L 273 271 A 3 3 0 0 1 273 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#a855f7" d="M 291 271 L 299 271 A 3 3 0 0 1 299 271 L 299 271 A 0 0 0 0 1 299 271 L 299 271 A 0 0 0 0 1 291 271 L 291 271 A 3 3 0 0 1 291 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#a855f7" d="M 308 271 L 317 271 A 3 3 0 0 1 317 271 L 317 271 A 0 0 0 0 1 317 271 L 317 271 A 0 0 0 0 1 308 271 L 308 271 A 3 3 0 0 1 308 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#a855f7" d="M 326 271 L 334 271 A 3 3 0 0 1 334 271 L 334 271 A 0 0 0 0 1 334 271 L 334 271 A 0 0 0 0 1 326 271 L 326 271 A 3 3 0 0 1 326 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#a855f7" d="M 344 271 L 352 271 A 3 3 0 0 1 352 271 L 352 271 A 0 0 0 0 1 352 271 L 352 271 A 0 0 0 0 1 344 271 L 344 271 A 3 3 0 0 1 344 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#a855f7" d="M 362 271 L 370 271 A 3 3 0 0 1 370 271 L 370 271 A 0 0 0 0 1 370 271 L 370 271 A 0 0 0 0 1 362 271 L 362 271 A 3 3 0 0 1 362 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#a855f7" d="M 380 271 L 388 271 A 3 3 0 0 1 388 271 L 388 271 A 0 0 0 0 1 388 271 L 388 271 A 0 0 0 0 1 380 271 L 380 271 A 3 3 0 0 1 380 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#a855f7" d="M 398 271 L 406 271 A 3 3 0 0 1 406 271 L 406 271 A 0 0 0 0 1 406 271 L 406 271 A 0 0 0 0 1 398 271 L 398 271 A 3 3 0 0 1 398 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#a855f7" d="M 416 271 L 424 271 A 3 3 0 0 1 424 271 L 424 271 A 0 0 0 0 1 424 271 L 424 271 A 0 0 0 0 1 416 271 L 416 271 A 3 3 0 0 1 416 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#a855f7" d="M 433 271 L 442 271 A 3 3 0 0 1 442 271 L 442 271 A 0 0 0 0 1 442 271 L 442 271 A 0 0 0 0 1 433 271 L 433 271 A 3 3 0 0 1 433 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#a855f7" d="M 451 271 L 459 271 A 3 3 0 0 1 459 271 L 459 271 A 0 0 0 0 1 459 271 L 459 271 A 0 0 0 0 1 451 271 L 451 271 A 3 3 0 0 1 451 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#a855f7" d="M 469 37 L 477 37 A 3 3 0 0 1 477 37 L 477 37 A 0 0 0 0 1 477 37 L 477 37 A 0 0 0 0 1 469 37 L 469 37 A 3 3 0 0 1 469 37 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#a855f7" d="M 487 37 L 495 37 A 3 3 0 0 1 495 37 L 495 37 A 0 0 0 0 1 495 37 L 495 37 A 0 0 0 0 1 487 37 L 487 37 A 3 3 0 0 1 487 37 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path></g><g class="highcharts-markers highcharts-series-3 highcharts-column-series" data-z-index="0.1" opacity="1" transform="translate(28,15) scale(1 1)" clip-path="none"></g><g class="highcharts-series highcharts-series-4 highcharts-column-series highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(28,15) scale(1 1)" clip-path="url(#highcharts-bvykt4q-221-)"><path fill="#eab308" d="M 5 271 L 13 271 A 3 3 0 0 1 13 271 L 13 271 A 0 0 0 0 1 13 271 L 13 271 A 0 0 0 0 1 5 271 L 5 271 A 3 3 0 0 1 5 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#eab308" d="M 23 271 L 31 271 A 3 3 0 0 1 31 271 L 31 271 A 0 0 0 0 1 31 271 L 31 271 A 0 0 0 0 1 23 271 L 23 271 A 3 3 0 0 1 23 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#eab308" d="M 40 271 L 49 271 A 3 3 0 0 1 49 271 L 49 271 A 0 0 0 0 1 49 271 L 49 271 A 0 0 0 0 1 40 271 L 40 271 A 3 3 0 0 1 40 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#eab308" d="M 58 271 L 67 271 A 3 3 0 0 1 67 271 L 67 271 A 0 0 0 0 1 67 271 L 67 271 A 0 0 0 0 1 58 271 L 58 271 A 3 3 0 0 1 58 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#eab308" d="M 76 271 L 84 271 A 3 3 0 0 1 84 271 L 84 271 A 0 0 0 0 1 84 271 L 84 271 A 0 0 0 0 1 76 271 L 76 271 A 3 3 0 0 1 76 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#eab308" d="M 94 271 L 102 271 A 3 3 0 0 1 102 271 L 102 271 A 0 0 0 0 1 102 271 L 102 271 A 0 0 0 0 1 94 271 L 94 271 A 3 3 0 0 1 94 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#eab308" d="M 112 271 L 120 271 A 3 3 0 0 1 120 271 L 120 271 A 0 0 0 0 1 120 271 L 120 271 A 0 0 0 0 1 112 271 L 112 271 A 3 3 0 0 1 112 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#eab308" d="M 130 271 L 138 271 A 3 3 0 0 1 138 271 L 138 271 A 0 0 0 0 1 138 271 L 138 271 A 0 0 0 0 1 130 271 L 130 271 A 3 3 0 0 1 130 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#eab308" d="M 148 271 L 156 271 A 3 3 0 0 1 156 271 L 156 271 A 0 0 0 0 1 156 271 L 156 271 A 0 0 0 0 1 148 271 L 148 271 A 3 3 0 0 1 148 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#eab308" d="M 166 271 L 174 271 A 3 3 0 0 1 174 271 L 174 271 A 0 0 0 0 1 174 271 L 174 271 A 0 0 0 0 1 166 271 L 166 271 A 3 3 0 0 1 166 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#eab308" d="M 183 271 L 192 271 A 3 3 0 0 1 192 271 L 192 271 A 0 0 0 0 1 192 271 L 192 271 A 0 0 0 0 1 183 271 L 183 271 A 3 3 0 0 1 183 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#eab308" d="M 201 271 L 209 271 A 3 3 0 0 1 209 271 L 209 271 A 0 0 0 0 1 209 271 L 209 271 A 0 0 0 0 1 201 271 L 201 271 A 3 3 0 0 1 201 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#eab308" d="M 219 271 L 227 271 A 3 3 0 0 1 227 271 L 227 271 A 0 0 0 0 1 227 271 L 227 271 A 0 0 0 0 1 219 271 L 219 271 A 3 3 0 0 1 219 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#eab308" d="M 237 271 L 245 271 A 3 3 0 0 1 245 271 L 245 271 A 0 0 0 0 1 245 271 L 245 271 A 0 0 0 0 1 237 271 L 237 271 A 3 3 0 0 1 237 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#eab308" d="M 255 271 L 263 271 A 3 3 0 0 1 263 271 L 263 271 A 0 0 0 0 1 263 271 L 263 271 A 0 0 0 0 1 255 271 L 255 271 A 3 3 0 0 1 255 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#eab308" d="M 273 271 L 281 271 A 3 3 0 0 1 281 271 L 281 271 A 0 0 0 0 1 281 271 L 281 271 A 0 0 0 0 1 273 271 L 273 271 A 3 3 0 0 1 273 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#eab308" d="M 291 271 L 299 271 A 3 3 0 0 1 299 271 L 299 271 A 0 0 0 0 1 299 271 L 299 271 A 0 0 0 0 1 291 271 L 291 271 A 3 3 0 0 1 291 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#eab308" d="M 308 271 L 317 271 A 3 3 0 0 1 317 271 L 317 271 A 0 0 0 0 1 317 271 L 317 271 A 0 0 0 0 1 308 271 L 308 271 A 3 3 0 0 1 308 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#eab308" d="M 326 271 L 334 271 A 3 3 0 0 1 334 271 L 334 271 A 0 0 0 0 1 334 271 L 334 271 A 0 0 0 0 1 326 271 L 326 271 A 3 3 0 0 1 326 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#eab308" d="M 344 271 L 352 271 A 3 3 0 0 1 352 271 L 352 271 A 0 0 0 0 1 352 271 L 352 271 A 0 0 0 0 1 344 271 L 344 271 A 3 3 0 0 1 344 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#eab308" d="M 362 271 L 370 271 A 3 3 0 0 1 370 271 L 370 271 A 0 0 0 0 1 370 271 L 370 271 A 0 0 0 0 1 362 271 L 362 271 A 3 3 0 0 1 362 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#eab308" d="M 380 271 L 388 271 A 3 3 0 0 1 388 271 L 388 271 A 0 0 0 0 1 388 271 L 388 271 A 0 0 0 0 1 380 271 L 380 271 A 3 3 0 0 1 380 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#eab308" d="M 398 271 L 406 271 A 3 3 0 0 1 406 271 L 406 271 A 0 0 0 0 1 406 271 L 406 271 A 0 0 0 0 1 398 271 L 398 271 A 3 3 0 0 1 398 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#eab308" d="M 416 271 L 424 271 A 3 3 0 0 1 424 271 L 424 271 A 0 0 0 0 1 424 271 L 424 271 A 0 0 0 0 1 416 271 L 416 271 A 3 3 0 0 1 416 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#eab308" d="M 433 271 L 442 271 A 3 3 0 0 1 442 271 L 442 271 A 0 0 0 0 1 442 271 L 442 271 A 0 0 0 0 1 433 271 L 433 271 A 3 3 0 0 1 433 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#eab308" d="M 451 271 L 459 271 A 3 3 0 0 1 459 271 L 459 271 A 0 0 0 0 1 459 271 L 459 271 A 0 0 0 0 1 451 271 L 451 271 A 3 3 0 0 1 451 271 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#eab308" d="M 469 37 L 477 37 A 3 3 0 0 1 477 37 L 477 37 A 0 0 0 0 1 477 37 L 477 37 A 0 0 0 0 1 469 37 L 469 37 A 3 3 0 0 1 469 37 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path><path fill="#eab308" d="M 487 37 L 495 37 A 3 3 0 0 1 495 37 L 495 37 A 0 0 0 0 1 495 37 L 495 37 A 0 0 0 0 1 487 37 L 487 37 A 3 3 0 0 1 487 37 Z" stroke="#ffffff" stroke-width="0" opacity="1" filter="none" class="highcharts-point"></path></g><g class="highcharts-markers highcharts-series-4 highcharts-column-series" data-z-index="0.1" opacity="1" transform="translate(28,15) scale(1 1)" clip-path="none"></g></g><text x="264" text-anchor="middle" class="highcharts-title" data-z-index="4" style="font-size: 1.2em; color: rgb(51, 51, 51); font-weight: bold; fill: rgb(51, 51, 51);" y="27"></text><text x="264" text-anchor="middle" class="highcharts-subtitle" data-z-index="4" style="color: rgb(102, 102, 102); font-size: 0.8em; fill: rgb(102, 102, 102);" y="28"></text><text x="0" text-anchor="start" class="highcharts-caption" data-z-index="4" style="color: rgb(102, 102, 102); font-size: 0.8em; fill: rgb(102, 102, 102);" y="296"></text><g class="highcharts-axis-labels highcharts-xaxis-labels" data-z-index="7"></g><g class="highcharts-axis-labels highcharts-yaxis-labels" data-z-index="7"><text x="13" text-anchor="end" transform="translate(0,0)" style="color: rgb(87, 89, 95); cursor: default; font-size: 12px; font-family: Inter, sans-serif; fill: rgb(87, 89, 95);" y="280" opacity="1">0</text><text x="13" text-anchor="end" transform="translate(0,0)" style="color: rgb(87, 89, 95); cursor: default; font-size: 12px; font-family: Inter, sans-serif; fill: rgb(87, 89, 95);" y="235" opacity="1">5</text><text x="13" text-anchor="end" transform="translate(0,0)" style="color: rgb(87, 89, 95); cursor: default; font-size: 12px; font-family: Inter, sans-serif; fill: rgb(87, 89, 95);" y="190" opacity="1">10</text><text x="13" text-anchor="end" transform="translate(0,0)" style="color: rgb(87, 89, 95); cursor: default; font-size: 12px; font-family: Inter, sans-serif; fill: rgb(87, 89, 95);" y="145" opacity="1">15</text><text x="13" text-anchor="end" transform="translate(0,0)" style="color: rgb(87, 89, 95); cursor: default; font-size: 12px; font-family: Inter, sans-serif; fill: rgb(87, 89, 95);" y="100" opacity="1">20</text><text x="13" text-anchor="end" transform="translate(0,0)" style="color: rgb(87, 89, 95); cursor: default; font-size: 12px; font-family: Inter, sans-serif; fill: rgb(87, 89, 95);" y="55" opacity="1">25</text><text x="13" text-anchor="end" transform="translate(0,0)" style="color: rgb(87, 89, 95); cursor: default; font-size: 12px; font-family: Inter, sans-serif; fill: rgb(87, 89, 95);" y="10" opacity="1">30</text></g></svg></div></div>
+</div>
+    </div>
+
+<!----></div>
+
+<div class="body-text-xs mb-24 flex w-full justify-between leading-header pl-36">
+  <time class="flex text-neutral">
+    Jan 25
+  </time>
+
+  <time class="text-neutral">
+    Feb 21
+  </time>
+</div>
+
+  <div>
+    <div class="Legend__root_4i9wn">
+  <ul class="flex list-inside list-square flex-wrap ">
+        <div>
+          <div class="flex items-center">
+            <div class="bg-charts-stage-type-inbox
+                mr-8
+                h-8
+                w-8">&nbsp;</div>
+            <div class=" Legend__label_4i9wn">
+                <span class="flex items-center Legend__labelText_4i9wn">
+                  Inbox
+                </span>
+                          </div>
+          </div>
+<!---->        </div>
+        <div>
+          <div class="flex items-center">
+            <div class="bg-charts-stage-type-in_process
+                mr-8
+                h-8
+                w-8">&nbsp;</div>
+            <div class=" Legend__label_4i9wn">
+                <span class="flex items-center Legend__labelText_4i9wn">
+                  In process
+                </span>
+                          </div>
+          </div>
+<!---->        </div>
+        <div>
+          <div class="flex items-center">
+            <div class="bg-charts-stage-type-screening
+                mr-8
+                h-8
+                w-8">&nbsp;</div>
+            <div class=" Legend__label_4i9wn">
+                <span class="flex items-center Legend__labelText_4i9wn">
+                  Screening
+                </span>
+                          </div>
+          </div>
+<!---->        </div>
+        <div>
+          <div class="flex items-center">
+            <div class="bg-charts-stage-type-interview
+                mr-8
+                h-8
+                w-8">&nbsp;</div>
+            <div class=" Legend__label_4i9wn">
+                <span class="flex items-center Legend__labelText_4i9wn">
+                  Interview
+                </span>
+                          </div>
+          </div>
+<!---->        </div>
+        <div>
+          <div class="flex items-center">
+            <div class="bg-charts-stage-type-offer
+                mr-8
+                h-8
+                w-8">&nbsp;</div>
+            <div class=" Legend__label_4i9wn">
+                <span class="flex items-center Legend__labelText_4i9wn">
+                  Offer
+                </span>
+                          </div>
+          </div>
+<!---->        </div>
+  </ul>
+</div>
+  </div>
+
+  
+      </div>
+<!---->    </a>
+
+  
+
+</div>
+    
+</div>
+
+    <div class="Cell__gridSpan--three_h7ptwv Cell__setHeight_h7ptwv">
+  
+      <div class="Card__root_1kkjkp Card__hover_1kkjkp relative flex h-full max-h-[470px] overflow-hidden p-0">
+    
+    <a id="ember1758" class="ember-view flex grow p-16  max-w-full" href="/companies/thAPQbZDwJI/analytics/jobs">
+      <div class="flex min-w-0 max-w-full flex-1 flex-col">
+        <div class="mb-8 flex justify-between text-neutral">
+          <div>
+            <div class="group flex items-center gap-8">
+    <h2 class="Heading__root_1h9ofj Heading__regular_1h9ofj" title="Conversion for job ads">
+      Conversion for job ads
+    </h2>
+
+<!---->
+  
+</div>
+
+              
+    <div class="mb-12 mt-8 flex flex-row flex-wrap">
+      <div class="mb-16 mt-8 mb-4 mr-12 mt-0 flex items-center">
+  <div class="group flex items-center gap-8">
+    <h2 class="Heading__root_1h9ofj Heading__chartCompare_1h9ofj mr-0" title=" visits">
+       visits
+    </h2>
+
+<!---->
+  
+</div>
+
+<!----></div>
+
+      <div class="mb-16 mt-8 mb-4 mt-0 flex items-center">
+  <div class="group flex items-center gap-8">
+    <h2 class="Heading__root_1h9ofj Heading__chartCompare_1h9ofj mr-0" title=" applications">
+       applications
+    </h2>
+
+<!---->
+  
+</div>
+
+<!----></div>
+    </div>
+  
+          </div>
+
+<!---->        </div>
+
+          <div class="absolute right-16 top-16">
+              
+      <button class="font-medium max-w-full Button__root_1ytjkr Button__appearance--secondary_1ytjkr Button__size--medium_1ytjkr Button__iconOnly_1ytjkr invisible appear-as-text ember-tooltip-target" type="button">
+    
+
+<!---->
+        <span class="inline-flex items-center justify-center w-20 h-20 text-[16px] transition-colors  Button__icon_1ytjkr">
+    <svg class="svg-inline--fa fa-chart-area fa-fw" data-prefix="far" data-icon="chart-area" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M48 56c0-13.3-10.7-24-24-24S0 42.7 0 56V408c0 39.8 32.2 72 72 72H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H72c-13.3 0-24-10.7-24-24V56zM286.1 225.9c9 9 21.2 14.1 33.9 14.1s24.9-5.1 33.9-14.1l27.3-27.3L432 257.8l0 78.2H144l0-92.1 80-80 62.1 62.1zM320 192l-33.9-33.9-39.4-39.4c-12.5-12.5-32.8-12.5-45.3 0l-91.3 91.3c-9 9-14.1 21.2-14.1 33.9V352c0 17.7 14.3 32 32 32H448c17.7 0 32-14.3 32-32V257.8c0-11.5-4.1-22.5-11.6-31.2l-62-72.3c-12.1-14.2-33.7-15-46.9-1.8l-5.6 5.6L320 192z"></path>
+    </svg>
+  
+<!----></span>
+
+<!---->
+<!---->
+<!---->
+<!---->
+        <div id="ember1760" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+
+<!---->    
+  </button>
+
+<!---->  
+
+          </div>
+
+<!---->
+          
+    <div class="flex h-full flex-2 flex-col">
+      <div class="mb-16 flex-1">
+        <div class="mb-8">
+  <div>
+  <div class="overflow-hidden" data-highcharts-chart="8" data-render-state="settled" style="overflow: hidden;"><div id="highcharts-bvykt4q-334" dir="ltr" style="position: relative; overflow: hidden; width: 408px; height: 250px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); user-select: none; touch-action: manipulation; outline: none; font-size: 14px;" class="highcharts-container "><svg version="1.1" class="highcharts-root" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px;" xmlns="http://www.w3.org/2000/svg" width="408" height="250" viewBox="0 0 408 250" role="img" aria-label=""><desc>Created with Highcharts 11.2.0</desc><defs><filter id="highcharts-drop-shadow-8"><feDropShadow dx="1" dy="1" flood-color="#000000" flood-opacity="0.75" stdDeviation="2.5"></feDropShadow></filter><clipPath id="highcharts-bvykt4q-335-"><rect x="0" y="0" width="408" height="235" fill="none"></rect></clipPath><clipPath id="highcharts-bvykt4q-336-"><rect x="0" y="0" width="408" height="235" fill="none"></rect></clipPath></defs><rect fill="transparent" class="highcharts-background" filter="none" x="0" y="0" width="408" height="250" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="0" y="15" width="408" height="235" filter="none"></rect><g class="highcharts-pane-group" data-z-index="0"></g><g class="highcharts-grid highcharts-xaxis-grid" data-z-index="1"></g><g class="highcharts-grid highcharts-yaxis-grid" data-z-index="1"></g><rect fill="none" class="highcharts-plot-border" data-z-index="1" stroke="#cccccc" stroke-width="0" x="0" y="15" width="408" height="235"></rect><g class="highcharts-axis highcharts-xaxis" data-z-index="2"><path fill="none" class="highcharts-axis-line" stroke="#eeeff2" stroke-width="1" data-z-index="7" d="M 0 250.5 L 408 250.5"></path></g><g class="highcharts-axis highcharts-yaxis" data-z-index="2"><path fill="none" class="highcharts-axis-line" stroke="transparent" stroke-width="1" data-z-index="7" d="M -0.5 15 L -0.5 250"></path></g><g class="highcharts-series-group" data-z-index="3" filter="none"><g class="highcharts-series highcharts-series-0 highcharts-spline-series" data-z-index="0.1" opacity="1" transform="translate(0,15) scale(1 1)" clip-path="url(#highcharts-bvykt4q-336-)"></g><g class="highcharts-markers highcharts-series-0 highcharts-spline-series" data-z-index="0.1" opacity="1" transform="translate(0,15) scale(1 1)" clip-path="none"></g><g class="highcharts-series highcharts-series-1 highcharts-spline-series" data-z-index="0.1" opacity="1" transform="translate(0,15) scale(1 1)" clip-path="url(#highcharts-bvykt4q-336-)"></g><g class="highcharts-markers highcharts-series-1 highcharts-spline-series" data-z-index="0.1" opacity="1" transform="translate(0,15) scale(1 1)" clip-path="none"></g></g><text x="204" text-anchor="middle" class="highcharts-title" data-z-index="4" style="font-size: 1.2em; color: rgb(51, 51, 51); font-weight: bold; fill: rgb(51, 51, 51);" y="27"></text><text x="204" text-anchor="middle" class="highcharts-subtitle" data-z-index="4" style="color: rgb(102, 102, 102); font-size: 0.8em; fill: rgb(102, 102, 102);" y="28"></text><text x="0" text-anchor="start" class="highcharts-caption" data-z-index="4" style="color: rgb(102, 102, 102); font-size: 0.8em; fill: rgb(102, 102, 102);" y="261"></text><g class="highcharts-axis-labels highcharts-xaxis-labels" data-z-index="7"></g><g class="highcharts-axis-labels highcharts-yaxis-labels" data-z-index="7"></g></svg></div></div>
+</div>
+</div>
+    <div class="body-text-xs mb-24 flex w-full justify-between leading-header px-8">
+  <time class="flex text-neutral">
+    Feb 22
+  </time>
+
+  <time class="text-neutral">
+    Feb 22
+  </time>
+</div>
+<!---->
+      </div>
+
+      <div>
+        <div class="Legend__root_4i9wn">
+  <ul class="flex list-inside list-square flex-wrap ">
+        <div>
+          <div class="flex items-center">
+            <div class="bg-charts-color-0
+                mr-8
+                h-8
+                w-8">&nbsp;</div>
+            <div class=" Legend__label_4i9wn">
+                <span class="flex items-center Legend__labelText_4i9wn">
+                  Applications
+                </span>
+                          </div>
+          </div>
+<!---->        </div>
+        <div>
+          <div class="flex items-center">
+            <div class="bg-charts-color-1
+                mr-8
+                h-8
+                w-8">&nbsp;</div>
+            <div class=" Legend__label_4i9wn">
+                <span class="flex items-center Legend__labelText_4i9wn">
+                  Visits
+                </span>
+                          </div>
+          </div>
+<!---->        </div>
+  </ul>
+</div>
+      </div>
+    </div>
+  
+      </div>
+        
+    <div class="flex max-w-[120px] flex-col items-center justify-center overflow-auto border-l border-l-zinc-200 p-16">
+      <div class="text-center">
+        <div class="heading-3 text-neutral-medium">
+          %
+        </div>
+          <div class="body-text-s text-neutral-medium">
+            Conversion rate
+          </div>
+      </div>
+    </div>
+  
+    </a>
+
+  
+
+</div>
+    
+</div>
+
+    <div class="Cell__gridSpan--three_h7ptwv Cell__setHeight_h7ptwv">
+  
+      <div class="Card__root_1kkjkp relative flex h-full max-h-[470px] overflow-hidden p-0">
+    
+    <a id="ember1773" class="ember-view flex grow p-16  max-w-full" href="/companies/thAPQbZDwJI/analytics/pipeline-speed">
+      <div class="flex min-w-0 max-w-full flex-1 flex-col">
+        <div class="mb-8 flex justify-between text-neutral">
+          <div>
+            <div class="group flex items-center gap-8">
+    <h2 class="Heading__root_1h9ofj Heading__regular_1h9ofj" title="Pipeline speed (in days)">
+      Pipeline speed (in days)
+    </h2>
+
+<!---->
+  
+</div>
+
+<!---->          </div>
+
+<!---->        </div>
+
+          <div class="absolute right-16 top-16">
+              
+      <button class="font-medium max-w-full Button__root_1ytjkr Button__appearance--secondary_1ytjkr Button__size--medium_1ytjkr Button__iconOnly_1ytjkr invisible appear-as-text ember-tooltip-target" type="button">
+    
+
+<!---->
+        <span class="inline-flex items-center justify-center w-20 h-20 text-[16px] transition-colors  Button__icon_1ytjkr">
+    <svg class="svg-inline--fa fa-chart-area fa-fw" data-prefix="far" data-icon="chart-area" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M48 56c0-13.3-10.7-24-24-24S0 42.7 0 56V408c0 39.8 32.2 72 72 72H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H72c-13.3 0-24-10.7-24-24V56zM286.1 225.9c9 9 21.2 14.1 33.9 14.1s24.9-5.1 33.9-14.1l27.3-27.3L432 257.8l0 78.2H144l0-92.1 80-80 62.1 62.1zM320 192l-33.9-33.9-39.4-39.4c-12.5-12.5-32.8-12.5-45.3 0l-91.3 91.3c-9 9-14.1 21.2-14.1 33.9V352c0 17.7 14.3 32 32 32H448c17.7 0 32-14.3 32-32V257.8c0-11.5-4.1-22.5-11.6-31.2l-62-72.3c-12.1-14.2-33.7-15-46.9-1.8l-5.6 5.6L320 192z"></path>
+    </svg>
+  
+<!----></span>
+
+<!---->
+<!---->
+<!---->
+<!---->
+        <div id="ember1775" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+
+<!---->    
+  </button>
+
+<!---->  
+
+          </div>
+
+<!---->
+            <div class="mx-auto flex flex-1 max-w-[400px] min-h-[400px] text-center">
+  <div class="self-center w-full">
+      <span class="inline-flex items-center justify-center w-48 h-48 text-[38px] flex justify-center items-center rounded-full mb-16 bg-decorative-neutral-weak !w-[88px] !h-[88px]
+          mb-16">
+    <svg class="svg-inline--fa fa-star fa-fw" data-prefix="far" data-icon="star" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+        <path fill="currentColor" d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"></path>
+    </svg>
+  
+<!----></span>
+
+<!---->
+    <div class="body-text
+        text-neutral-medium">
+      
+              <span class="text-neutral">
+                  No data yet.
+              </span>
+            
+    </div>
+
+<!---->  </div>
+</div>
+      </div>
+<!---->    </a>
+
+  
+
+</div>
+    
+</div>
+
+    <div class="Cell__gridSpan--three_h7ptwv Cell__setHeight_h7ptwv">
+  
+      <div class="Card__root_1kkjkp Card__hover_1kkjkp relative flex h-full max-h-[470px] overflow-hidden p-0 overflow-visible">
+    
+    <a id="ember1761" class="ember-view flex grow p-16  max-w-full" href="/companies/thAPQbZDwJI/analytics/pipeline-conversions">
+      <div class="flex min-w-0 max-w-full flex-1 flex-col">
+        <div class="mb-8 flex justify-between text-neutral">
+          <div>
+            <div class="group flex items-center gap-8">
+    <h2 class="Heading__root_1h9ofj Heading__regular_1h9ofj" title="Pipeline conversion">
+      Pipeline conversion
+    </h2>
+
+<!---->
+  
+</div>
+
+<!---->          </div>
+
+<!---->        </div>
+
+          <div class="absolute right-16 top-16">
+              
+      <button class="font-medium max-w-full Button__root_1ytjkr Button__appearance--secondary_1ytjkr Button__size--medium_1ytjkr Button__iconOnly_1ytjkr invisible appear-as-text ember-tooltip-target" type="button">
+    
+
+<!---->
+        <span class="inline-flex items-center justify-center w-20 h-20 text-[16px] transition-colors  Button__icon_1ytjkr">
+    <svg class="svg-inline--fa fa-chart-area fa-fw" data-prefix="far" data-icon="chart-area" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M48 56c0-13.3-10.7-24-24-24S0 42.7 0 56V408c0 39.8 32.2 72 72 72H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H72c-13.3 0-24-10.7-24-24V56zM286.1 225.9c9 9 21.2 14.1 33.9 14.1s24.9-5.1 33.9-14.1l27.3-27.3L432 257.8l0 78.2H144l0-92.1 80-80 62.1 62.1zM320 192l-33.9-33.9-39.4-39.4c-12.5-12.5-32.8-12.5-45.3 0l-91.3 91.3c-9 9-14.1 21.2-14.1 33.9V352c0 17.7 14.3 32 32 32H448c17.7 0 32-14.3 32-32V257.8c0-11.5-4.1-22.5-11.6-31.2l-62-72.3c-12.1-14.2-33.7-15-46.9-1.8l-5.6 5.6L320 192z"></path>
+    </svg>
+  
+<!----></span>
+
+<!---->
+<!---->
+<!---->
+<!---->
+        <div id="ember1763" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+
+<!---->    
+  </button>
+
+<!---->  
+
+          </div>
+
+<!---->
+          
+    <div class="relative">
+  <div class="mt-16">
+  <div class="overflow-hidden" data-highcharts-chart="9" data-render-state="settled" style="overflow: hidden;"><div id="highcharts-bvykt4q-339" dir="ltr" style="position: relative; overflow: hidden; width: 528px; height: 300px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); user-select: none; touch-action: manipulation; outline: none; font-size: 14px;" class="highcharts-container "><svg version="1.1" class="highcharts-root" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px;" xmlns="http://www.w3.org/2000/svg" width="528" height="300" viewBox="0 0 528 300" role="img" aria-label=""><desc>Created with Highcharts 11.2.0</desc><defs><filter id="highcharts-drop-shadow-9"><feDropShadow dx="1" dy="1" flood-color="#000000" flood-opacity="0.75" stdDeviation="2.5"></feDropShadow></filter><clipPath id="highcharts-bvykt4q-340-"><rect x="0" y="0" width="528" height="266" fill="none"></rect></clipPath><clipPath id="highcharts-bvykt4q-345-"><rect x="0" y="0" width="528" height="250" fill="none"></rect></clipPath></defs><rect fill="transparent" class="highcharts-background" filter="none" x="0" y="0" width="528" height="300" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="0" y="10" width="528" height="266" filter="none"></rect><g class="highcharts-pane-group" data-z-index="0"></g><g class="highcharts-plot-lines-0" data-z-index="0"><path fill="none" class="highcharts-plot-line " stroke="#E4E4E7" stroke-width="1" d="M 108.5 10 L 108.5 276"></path><path fill="none" class="highcharts-plot-line " stroke="#E4E4E7" stroke-width="1" d="M 211.5 10 L 211.5 276"></path><path fill="none" class="highcharts-plot-line " stroke="#E4E4E7" stroke-width="1" d="M 315.5 10 L 315.5 276"></path><path fill="none" class="highcharts-plot-line " stroke="#E4E4E7" stroke-width="1" d="M 418.5 10 L 418.5 276"></path></g><g class="highcharts-grid highcharts-xaxis-grid" data-z-index="1"><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 4.5 10 L 4.5 276" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 108.5 10 L 108.5 276" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 211.5 10 L 211.5 276" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 315.5 10 L 315.5 276" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 418.5 10 L 418.5 276" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 522.5 10 L 522.5 276" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid" data-z-index="1"><path fill="none" stroke="#d2dddf" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 0 274.5 L 528 274.5" opacity="1"></path><path fill="none" stroke="#d2dddf" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 0 212.5 L 528 212.5" opacity="1"></path><path fill="none" stroke="#d2dddf" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 0 149.5 L 528 149.5" opacity="1"></path><path fill="none" stroke="#d2dddf" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 0 87.5 L 528 87.5" opacity="1"></path><path fill="none" stroke="#d2dddf" stroke-width="0" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 0 24.5 L 528 24.5" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" data-z-index="1" stroke="#cccccc" stroke-width="0" x="0" y="10" width="528" height="266"></rect><g class="highcharts-axis highcharts-xaxis" data-z-index="2"><path fill="none" class="highcharts-axis-line" stroke="transparent" stroke-width="1" data-z-index="7" d="M 0 276.5 L 528 276.5"></path></g><g class="highcharts-axis highcharts-yaxis" data-z-index="2"><path fill="none" class="highcharts-axis-line" stroke="transparent" stroke-width="1" data-z-index="7" d="M -0.5 24 L -0.5 274"></path></g><g class="highcharts-series-group" data-z-index="3" filter="none"><g class="highcharts-series highcharts-series-0 highcharts-polygon-series" data-z-index="0.1" opacity="1" transform="translate(0,24) scale(1 1)" clip-path="url(#highcharts-bvykt4q-345-)"><path fill="#3b82f6" d="M 5.1764705882353 250 L 108.70588235294 250 L 108.70588235294 250 L 5.1764705882353 250 Z" class="highcharts-area" data-z-index="0"></path><path fill="none" d="M 5.1764705882353 250 L 108.70588235294 250 L 108.70588235294 250 L 5.1764705882353 250 Z" class="highcharts-graph" data-z-index="1" stroke="#FFF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" filter="none"></path><path fill="rgba(192,192,192,0.0001)" d="M 5.1764705882353 250 L 108.70588235294 250 L 108.70588235294 250 L 5.1764705882353 250 Z" data-z-index="2" class="highcharts-tracker-area" stroke-linecap="round" stroke-linejoin="round" stroke="rgba(192,192,192,0.0001)" stroke-width="1"></path></g><g class="highcharts-markers highcharts-series-0 highcharts-polygon-series highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(0,24) scale(1 1)" clip-path="none"></g><g class="highcharts-series highcharts-series-1 highcharts-polygon-series" data-z-index="0.1" opacity="1" transform="translate(0,24) scale(1 1)" clip-path="url(#highcharts-bvykt4q-345-)"><path fill="#f97316" d="M 108.70588235294 250 L 212.23529411765 250 L 212.23529411765 250 L 108.70588235294 250 Z" class="highcharts-area" data-z-index="0"></path><path fill="none" d="M 108.70588235294 250 L 212.23529411765 250 L 212.23529411765 250 L 108.70588235294 250 Z" class="highcharts-graph" data-z-index="1" stroke="#FFF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" filter="none"></path><path fill="rgba(192,192,192,0.0001)" d="M 108.70588235294 250 L 212.23529411765 250 L 212.23529411765 250 L 108.70588235294 250 Z" data-z-index="2" class="highcharts-tracker-area" stroke-linecap="round" stroke-linejoin="round" stroke="rgba(192,192,192,0.0001)" stroke-width="1"></path></g><g class="highcharts-markers highcharts-series-1 highcharts-polygon-series highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(0,24) scale(1 1)" clip-path="none"></g><g class="highcharts-series highcharts-series-2 highcharts-polygon-series" data-z-index="0.1" opacity="1" transform="translate(0,24) scale(1 1)" clip-path="url(#highcharts-bvykt4q-345-)"><path fill="#a855f7" d="M 212.23529411765 250 L 315.76470588235 250 L 315.76470588235 250 L 212.23529411765 250 Z" class="highcharts-area" data-z-index="0"></path><path fill="none" d="M 212.23529411765 250 L 315.76470588235 250 L 315.76470588235 250 L 212.23529411765 250 Z" class="highcharts-graph" data-z-index="1" stroke="#FFF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" filter="none"></path><path fill="rgba(192,192,192,0.0001)" d="M 212.23529411765 250 L 315.76470588235 250 L 315.76470588235 250 L 212.23529411765 250 Z" data-z-index="2" class="highcharts-tracker-area" stroke-linecap="round" stroke-linejoin="round" stroke="rgba(192,192,192,0.0001)" stroke-width="1"></path></g><g class="highcharts-markers highcharts-series-2 highcharts-polygon-series highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(0,24) scale(1 1)" clip-path="none"></g><g class="highcharts-series highcharts-series-3 highcharts-polygon-series" data-z-index="0.1" opacity="1" transform="translate(0,24) scale(1 1)" clip-path="url(#highcharts-bvykt4q-345-)"><path fill="#eab308" d="M 315.76470588235 250 L 419.29411764706 250 L 419.29411764706 250 L 315.76470588235 250 Z" class="highcharts-area" data-z-index="0"></path><path fill="none" d="M 315.76470588235 250 L 419.29411764706 250 L 419.29411764706 250 L 315.76470588235 250 Z" class="highcharts-graph" data-z-index="1" stroke="#FFF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" filter="none"></path><path fill="rgba(192,192,192,0.0001)" d="M 315.76470588235 250 L 419.29411764706 250 L 419.29411764706 250 L 315.76470588235 250 Z" data-z-index="2" class="highcharts-tracker-area" stroke-linecap="round" stroke-linejoin="round" stroke="rgba(192,192,192,0.0001)" stroke-width="1"></path></g><g class="highcharts-markers highcharts-series-3 highcharts-polygon-series highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(0,24) scale(1 1)" clip-path="none"></g><g class="highcharts-series highcharts-series-4 highcharts-polygon-series" data-z-index="0.1" opacity="1" transform="translate(0,24) scale(1 1)" clip-path="url(#highcharts-bvykt4q-345-)"><path fill="#26c12b" d="M 419.29411764706 250 L 522.82352941176 250 L 522.82352941176 250 L 419.29411764706 250 Z" class="highcharts-area" data-z-index="0"></path><path fill="none" d="M 419.29411764706 250 L 522.82352941176 250 L 522.82352941176 250 L 419.29411764706 250 Z" class="highcharts-graph" data-z-index="1" stroke="#FFF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" filter="none"></path><path fill="rgba(192,192,192,0.0001)" d="M 419.29411764706 250 L 522.82352941176 250 L 522.82352941176 250 L 419.29411764706 250 Z" data-z-index="2" class="highcharts-tracker-area" stroke-linecap="round" stroke-linejoin="round" stroke="rgba(192,192,192,0.0001)" stroke-width="1"></path></g><g class="highcharts-markers highcharts-series-4 highcharts-polygon-series highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(0,24) scale(1 1)" clip-path="none"></g></g><text x="264" text-anchor="middle" class="highcharts-title" data-z-index="4" style="font-size: 1.2em; color: rgb(51, 51, 51); font-weight: bold; fill: rgb(51, 51, 51);" y="22"></text><text x="264" text-anchor="middle" class="highcharts-subtitle" data-z-index="4" style="color: rgb(102, 102, 102); font-size: 0.8em; fill: rgb(102, 102, 102);" y="23"></text><text x="0" text-anchor="start" class="highcharts-caption" data-z-index="4" style="color: rgb(102, 102, 102); font-size: 0.8em; fill: rgb(102, 102, 102);" y="287"></text><g class="highcharts-axis-labels highcharts-xaxis-labels" data-z-index="7"></g><g class="highcharts-axis-labels highcharts-yaxis-labels" data-z-index="7"></g></svg></div></div>
+</div>
+  <div class="absolute inset-0 grid px-8" style="grid-template-columns:repeat(5, minmax(0, 1fr));">
+      <div class="text-center ember-tooltip-target">
+        <p class="truncate px-4 text-neutral-medium
+            body-text-xs mb-0">
+          Inbox
+        </p>
+
+        <p class="body-text-semibold m-0 mx-4 text-neutral
+            body-text-s">
+          0
+          (0.0%)
+        </p>
+        <div id="ember1764" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+      </div>
+      <div class="text-center ember-tooltip-target">
+        <p class="truncate px-4 text-neutral-medium
+            body-text-xs mb-0">
+          Screening
+        </p>
+
+        <p class="body-text-semibold m-0 mx-4 text-neutral
+            body-text-s">
+          0
+          (0.0%)
+        </p>
+        <div id="ember1765" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+      </div>
+      <div class="text-center ember-tooltip-target">
+        <p class="truncate px-4 text-neutral-medium
+            body-text-xs mb-0">
+          Interview
+        </p>
+
+        <p class="body-text-semibold m-0 mx-4 text-neutral
+            body-text-s">
+          0
+          (0.0%)
+        </p>
+        <div id="ember1766" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+      </div>
+      <div class="text-center ember-tooltip-target">
+        <p class="truncate px-4 text-neutral-medium
+            body-text-xs mb-0">
+          Offer
+        </p>
+
+        <p class="body-text-semibold m-0 mx-4 text-neutral
+            body-text-s">
+          0
+          (0.0%)
+        </p>
+        <div id="ember1767" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+      </div>
+      <div class="text-center ember-tooltip-target">
+        <p class="truncate px-4 text-neutral-medium
+            body-text-xs mb-0">
+          Hired
+        </p>
+
+        <p class="body-text-semibold m-0 mx-4 text-neutral
+            body-text-s">
+          0
+          (0.0%)
+        </p>
+        <div id="ember1768" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+      </div>
+  </div>
+  <div class="absolute bottom-0 left-0 right-0 grid
+      px-8" style="grid-template-columns:repeat(5, minmax(0, 1fr));">
+    <div class="text-center">
+    </div>
+        <div class="w-full">
+          <span class="inline-flex max-w-full items-center justify-center gap-4 whitespace-nowrap rounded-full font-medium leading-[initial] h-24 min-w-[24px] px-8 text-12 text-decorative-zinc-weak bg-decorative-zinc-weak relative cursor-pointer left-[-18%] ember-tooltip-target">
+    
+            <span class="inline-flex items-center justify-center w-16 h-16 text-[14px] text-icon-decorative-zinc-weak">
+    <svg class="svg-inline--fa fa-arrow-right fa-fw" data-prefix="far" data-icon="arrow-right" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path fill="currentColor" d="M440.6 273.4c4.7-4.5 7.4-10.8 7.4-17.4s-2.7-12.8-7.4-17.4l-176-168c-9.6-9.2-24.8-8.8-33.9 .8s-8.8 24.8 .8 33.9L364.1 232 24 232c-13.3 0-24 10.7-24 24s10.7 24 24 24l340.1 0L231.4 406.6c-9.6 9.2-9.9 24.3-.8 33.9s24.3 9.9 33.9 .8l176-168z"></path>
+    </svg>
+  
+<!----></span>
+            <div id="ember1769" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+          
+
+      <span class="truncate">
+        0.0%
+      </span>
+
+<!----></span>
+        </div>
+        <div class="w-full">
+          <span class="inline-flex max-w-full items-center justify-center gap-4 whitespace-nowrap rounded-full font-medium leading-[initial] h-24 min-w-[24px] px-8 text-12 text-decorative-zinc-weak bg-decorative-zinc-weak relative cursor-pointer left-[-18%] ember-tooltip-target">
+    
+            <span class="inline-flex items-center justify-center w-16 h-16 text-[14px] text-icon-decorative-zinc-weak">
+    <svg class="svg-inline--fa fa-arrow-right fa-fw" data-prefix="far" data-icon="arrow-right" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path fill="currentColor" d="M440.6 273.4c4.7-4.5 7.4-10.8 7.4-17.4s-2.7-12.8-7.4-17.4l-176-168c-9.6-9.2-24.8-8.8-33.9 .8s-8.8 24.8 .8 33.9L364.1 232 24 232c-13.3 0-24 10.7-24 24s10.7 24 24 24l340.1 0L231.4 406.6c-9.6 9.2-9.9 24.3-.8 33.9s24.3 9.9 33.9 .8l176-168z"></path>
+    </svg>
+  
+<!----></span>
+            <div id="ember1770" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+          
+
+      <span class="truncate">
+        0.0%
+      </span>
+
+<!----></span>
+        </div>
+        <div class="w-full">
+          <span class="inline-flex max-w-full items-center justify-center gap-4 whitespace-nowrap rounded-full font-medium leading-[initial] h-24 min-w-[24px] px-8 text-12 text-decorative-zinc-weak bg-decorative-zinc-weak relative cursor-pointer left-[-18%] ember-tooltip-target">
+    
+            <span class="inline-flex items-center justify-center w-16 h-16 text-[14px] text-icon-decorative-zinc-weak">
+    <svg class="svg-inline--fa fa-arrow-right fa-fw" data-prefix="far" data-icon="arrow-right" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path fill="currentColor" d="M440.6 273.4c4.7-4.5 7.4-10.8 7.4-17.4s-2.7-12.8-7.4-17.4l-176-168c-9.6-9.2-24.8-8.8-33.9 .8s-8.8 24.8 .8 33.9L364.1 232 24 232c-13.3 0-24 10.7-24 24s10.7 24 24 24l340.1 0L231.4 406.6c-9.6 9.2-9.9 24.3-.8 33.9s24.3 9.9 33.9 .8l176-168z"></path>
+    </svg>
+  
+<!----></span>
+            <div id="ember1771" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+          
+
+      <span class="truncate">
+        0.0%
+      </span>
+
+<!----></span>
+        </div>
+        <div class="w-full">
+          <span class="inline-flex max-w-full items-center justify-center gap-4 whitespace-nowrap rounded-full font-medium leading-[initial] h-24 min-w-[24px] px-8 text-12 text-decorative-zinc-weak bg-decorative-zinc-weak relative cursor-pointer left-[-18%] ember-tooltip-target">
+    
+            <span class="inline-flex items-center justify-center w-16 h-16 text-[14px] text-icon-decorative-zinc-weak">
+    <svg class="svg-inline--fa fa-arrow-right fa-fw" data-prefix="far" data-icon="arrow-right" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path fill="currentColor" d="M440.6 273.4c4.7-4.5 7.4-10.8 7.4-17.4s-2.7-12.8-7.4-17.4l-176-168c-9.6-9.2-24.8-8.8-33.9 .8s-8.8 24.8 .8 33.9L364.1 232 24 232c-13.3 0-24 10.7-24 24s10.7 24 24 24l340.1 0L231.4 406.6c-9.6 9.2-9.9 24.3-.8 33.9s24.3 9.9 33.9 .8l176-168z"></path>
+    </svg>
+  
+<!----></span>
+            <div id="ember1772" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+          
+
+      <span class="truncate">
+        0.0%
+      </span>
+
+<!----></span>
+        </div>
+<!---->  </div>
+</div>
+    <p class="body-text-s mt-12 text-neutral-medium">
+      Shows candidates who applied or were sourced between 2024-01-25 &amp; 2024-02-21 (not candidates who were moved in this time period)
+    </p>
+  
+      </div>
+<!---->    </a>
+
+  
+
+</div>
+    
+</div>
+
+    <div class="Cell__gridSpan--three_h7ptwv Cell__setHeight_h7ptwv">
+  
+      <div class="Card__root_1kkjkp relative flex h-full max-h-[470px] overflow-hidden p-0">
+    
+    <a id="ember1792" class="ember-view flex grow p-16  max-w-full" href="/companies/thAPQbZDwJI/analytics/reject-reasons">
+      <div class="flex min-w-0 max-w-full flex-1 flex-col">
+        <div class="mb-8 flex justify-between text-neutral">
+          <div>
+            <div class="group flex items-center gap-8">
+    <h2 class="Heading__root_1h9ofj Heading__regular_1h9ofj" title="Reject reasons: Overview">
+      Reject reasons: Overview
+    </h2>
+
+<!---->
+  
+</div>
+
+              <div class="body-text mt-8 text-neutral-medium">
+                0 rejected candidates
+              </div>
+                      </div>
+
+<!---->        </div>
+
+          <div class="absolute right-16 top-16">
+              
+      <button class="font-medium max-w-full Button__root_1ytjkr Button__appearance--secondary_1ytjkr Button__size--medium_1ytjkr Button__iconOnly_1ytjkr invisible appear-as-text ember-tooltip-target" type="button">
+    
+
+<!---->
+        <span class="inline-flex items-center justify-center w-20 h-20 text-[16px] transition-colors  Button__icon_1ytjkr">
+    <svg class="svg-inline--fa fa-chart-area fa-fw" data-prefix="far" data-icon="chart-area" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M48 56c0-13.3-10.7-24-24-24S0 42.7 0 56V408c0 39.8 32.2 72 72 72H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H72c-13.3 0-24-10.7-24-24V56zM286.1 225.9c9 9 21.2 14.1 33.9 14.1s24.9-5.1 33.9-14.1l27.3-27.3L432 257.8l0 78.2H144l0-92.1 80-80 62.1 62.1zM320 192l-33.9-33.9-39.4-39.4c-12.5-12.5-32.8-12.5-45.3 0l-91.3 91.3c-9 9-14.1 21.2-14.1 33.9V352c0 17.7 14.3 32 32 32H448c17.7 0 32-14.3 32-32V257.8c0-11.5-4.1-22.5-11.6-31.2l-62-72.3c-12.1-14.2-33.7-15-46.9-1.8l-5.6 5.6L320 192z"></path>
+    </svg>
+  
+<!----></span>
+
+<!---->
+<!---->
+<!---->
+<!---->
+        <div id="ember1794" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+
+<!---->    
+  </button>
+
+<!---->  
+
+          </div>
+
+<!---->
+            <div class="mx-auto flex flex-1 max-w-[400px] min-h-[400px] text-center">
+  <div class="self-center w-full">
+      <span class="inline-flex items-center justify-center w-48 h-48 text-[38px] flex justify-center items-center rounded-full mb-16 bg-decorative-neutral-weak !w-[88px] !h-[88px]
+          mb-16">
+    <svg class="svg-inline--fa fa-star fa-fw" data-prefix="far" data-icon="star" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+        <path fill="currentColor" d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"></path>
+    </svg>
+  
+<!----></span>
+
+<!---->
+    <div class="body-text
+        text-neutral-medium">
+      
+              <span class="text-neutral">
+                  No data yet.
+              </span>
+            
+    </div>
+
+<!---->  </div>
+</div>
+      </div>
+<!---->    </a>
+
+  
+        <div class="mb-16 mt-8 flex justify-center">
+    <span class="flex">
+        <button class="flex h-16 w-16 items-center Dots__dot_jor0k2 Dots__dot--active_jor0k2" type="button">
+          <span class="inline-flex items-center justify-center w-8 h-8 text-[8px]">
+    <svg class="svg-inline--fa fa-circle fa-fw" data-prefix="fas" data-icon="circle" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"></path>
+    </svg>
+  
+<!----></span>
+        </button>
+        <button class="flex h-16 w-16 items-center Dots__dot_jor0k2" type="button">
+          <span class="inline-flex items-center justify-center w-8 h-8 text-[8px]">
+    <svg class="svg-inline--fa fa-circle fa-fw" data-prefix="fas" data-icon="circle" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"></path>
+    </svg>
+  
+<!----></span>
+        </button>
+        <button class="flex h-16 w-16 items-center Dots__dot_jor0k2" type="button">
+          <span class="inline-flex items-center justify-center w-8 h-8 text-[8px]">
+    <svg class="svg-inline--fa fa-circle fa-fw" data-prefix="fas" data-icon="circle" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"></path>
+    </svg>
+  
+<!----></span>
+        </button>
+    </span>
+  </div>
+
+  
+
+</div>
+    
+</div>
+
+    <div class="Cell__gridSpan--three_h7ptwv Cell__setHeight_h7ptwv">
+  
+      <div class="Card__root_1kkjkp flex-1">
+    
+  <a id="ember1791" class="ember-view flex h-full flex-col text-neutral hover:text-neutral" href="/companies/thAPQbZDwJI/analytics/time-to-hire">
+    <div class="u-display--flex u-justify-content--space-between">
+      <div class="group flex items-center gap-8">
+    <h2 class="Heading__root_1h9ofj Heading__regular_1h9ofj" title="All hires">
+      All hires
+    </h2>
+
+<!---->
+  
+</div>
+
+<!---->    </div>
+
+      <div class="EmptyState__root_14ak8w">
+    <span class="EmptyState__emoji_14ak8w">
+      <span class="font-emoji">
+  🎣
+</span>
+    </span>
+
+    <h2 class="EmptyState__heading_14ak8w">
+      No data yet.
+    </h2>
+</div>
+  </a>
+
+<!---->
+</div>
+    
+</div>
+
+      <div class="Cell__gridSpan--three_h7ptwv Cell__setHeight_h7ptwv">
+  
+        <div class="Card__root_1kkjkp relative flex h-full max-h-[470px] overflow-hidden p-0">
+    
+    <a id="ember1722" class="ember-view flex grow p-16  max-w-full" href="/companies/thAPQbZDwJI/analytics/meetings">
+      <div class="flex min-w-0 max-w-full flex-1 flex-col">
+        <div class="mb-8 flex justify-between text-neutral">
+          <div>
+            <div class="group flex items-center gap-8">
+    <h2 class="Heading__root_1h9ofj Heading__regular_1h9ofj" title="Candidate meetings frequency">
+      Candidate meetings frequency
+    </h2>
+
+<!---->
+  
+</div>
+
+<!---->          </div>
+
+<!---->        </div>
+
+          <div class="absolute right-16 top-16">
+              
+      <button class="font-medium max-w-full Button__root_1ytjkr Button__appearance--secondary_1ytjkr Button__size--medium_1ytjkr Button__iconOnly_1ytjkr invisible appear-as-text ember-tooltip-target" type="button">
+    
+
+<!---->
+        <span class="inline-flex items-center justify-center w-20 h-20 text-[16px] transition-colors  Button__icon_1ytjkr">
+    <svg class="svg-inline--fa fa-chart-area fa-fw" data-prefix="far" data-icon="chart-area" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M48 56c0-13.3-10.7-24-24-24S0 42.7 0 56V408c0 39.8 32.2 72 72 72H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H72c-13.3 0-24-10.7-24-24V56zM286.1 225.9c9 9 21.2 14.1 33.9 14.1s24.9-5.1 33.9-14.1l27.3-27.3L432 257.8l0 78.2H144l0-92.1 80-80 62.1 62.1zM320 192l-33.9-33.9-39.4-39.4c-12.5-12.5-32.8-12.5-45.3 0l-91.3 91.3c-9 9-14.1 21.2-14.1 33.9V352c0 17.7 14.3 32 32 32H448c17.7 0 32-14.3 32-32V257.8c0-11.5-4.1-22.5-11.6-31.2l-62-72.3c-12.1-14.2-33.7-15-46.9-1.8l-5.6 5.6L320 192z"></path>
+    </svg>
+  
+<!----></span>
+
+<!---->
+<!---->
+<!---->
+<!---->
+        <div id="ember1724" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+
+<!---->    
+  </button>
+
+<!---->  
+
+          </div>
+
+<!---->
+            <div class="mx-auto flex flex-1 max-w-[400px] min-h-[400px] text-center">
+  <div class="self-center w-full">
+      <span class="inline-flex items-center justify-center w-48 h-48 text-[38px] flex justify-center items-center rounded-full mb-16 bg-decorative-neutral-weak !w-[88px] !h-[88px]
+          mb-16">
+    <svg class="svg-inline--fa fa-star fa-fw" data-prefix="far" data-icon="star" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+        <path fill="currentColor" d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"></path>
+    </svg>
+  
+<!----></span>
+
+<!---->
+    <div class="body-text
+        text-neutral-medium">
+      
+              <span class="text-neutral">
+                  No data yet.
+              </span>
+            
+    </div>
+
+<!---->  </div>
+</div>
+      </div>
+<!---->    </a>
+
+  
+      <div class="mb-16 mt-8 flex justify-center">
+    <span class="flex">
+        <button class="flex h-16 w-16 items-center Dots__dot_jor0k2 Dots__dot--active_jor0k2" type="button">
+          <span class="inline-flex items-center justify-center w-8 h-8 text-[8px]">
+    <svg class="svg-inline--fa fa-circle fa-fw" data-prefix="fas" data-icon="circle" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"></path>
+    </svg>
+  
+<!----></span>
+        </button>
+        <button class="flex h-16 w-16 items-center Dots__dot_jor0k2" type="button">
+          <span class="inline-flex items-center justify-center w-8 h-8 text-[8px]">
+    <svg class="svg-inline--fa fa-circle fa-fw" data-prefix="fas" data-icon="circle" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"></path>
+    </svg>
+  
+<!----></span>
+        </button>
+    </span>
+  </div>
+
+  
+
+</div>
+      
+</div>
+
+<!---->  
+</div>
+
+  <h3 class="mb-24">
+    NPS
+  </h3>
+
+  <div class="Grid__grid_1x0s4z Grid__gridCols_1x0s4z Grid__gridGap_1x0s4z mb-64">
+  
+    <div class="Cell__gridSpan--two_h7ptwv Cell__setHeight_h7ptwv">
+  
+      <div class="Card__root_1kkjkp Card__hover_1kkjkp">
+    
+  <a id="ember1782" class="ember-view flex h-full flex-col" href="/companies/thAPQbZDwJI/analytics/nps-overview">
+    <div class="mb-16 flex justify-between">
+      <div class="group flex items-center gap-8">
+    <h2 class="Heading__root_1h9ofj Heading__regular_1h9ofj" title="NPS Score">
+      NPS Score
+    </h2>
+
+<!---->
+  
+</div>
+
+        
+      <button class="font-medium max-w-full Button__root_1ytjkr Button__appearance--secondary_1ytjkr Button__size--medium_1ytjkr Button__iconOnly_1ytjkr invisible appear-as-text ember-tooltip-target" type="button">
+    
+
+<!---->
+        <span class="inline-flex items-center justify-center w-20 h-20 text-[16px] transition-colors  Button__icon_1ytjkr">
+    <svg class="svg-inline--fa fa-chart-area fa-fw" data-prefix="far" data-icon="chart-area" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M48 56c0-13.3-10.7-24-24-24S0 42.7 0 56V408c0 39.8 32.2 72 72 72H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H72c-13.3 0-24-10.7-24-24V56zM286.1 225.9c9 9 21.2 14.1 33.9 14.1s24.9-5.1 33.9-14.1l27.3-27.3L432 257.8l0 78.2H144l0-92.1 80-80 62.1 62.1zM320 192l-33.9-33.9-39.4-39.4c-12.5-12.5-32.8-12.5-45.3 0l-91.3 91.3c-9 9-14.1 21.2-14.1 33.9V352c0 17.7 14.3 32 32 32H448c17.7 0 32-14.3 32-32V257.8c0-11.5-4.1-22.5-11.6-31.2l-62-72.3c-12.1-14.2-33.7-15-46.9-1.8l-5.6 5.6L320 192z"></path>
+    </svg>
+  
+<!----></span>
+
+<!---->
+<!---->
+<!---->
+<!---->
+        <div id="ember1784" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+
+<!---->    
+  </button>
+
+<!---->  
+
+    </div>
+
+      <div class="EmptyState__root_14ak8w text-neutral">
+    <span class="EmptyState__emoji_14ak8w">
+      <span class="font-emoji">
+  🎣
+</span>
+    </span>
+
+    <h2 class="EmptyState__heading_14ak8w">
+      No data yet.
+    </h2>
+</div>
+  </a>
+
+</div>
+    
+</div>
+
+      <div class="Cell__gridSpan--two_h7ptwv Cell__setHeight_h7ptwv">
+  
+        <div class="Card__root_1kkjkp relative flex h-full max-h-[470px] overflow-hidden p-0">
+    
+    <a id="ember1726" class="ember-view flex grow p-16  max-w-full" href="/companies/thAPQbZDwJI/analytics/nps">
+      <div class="flex min-w-0 max-w-full flex-1 flex-col">
+        <div class="mb-8 flex justify-between text-neutral">
+          <div>
+            <div class="group flex items-center gap-8">
+    <h2 class="Heading__root_1h9ofj Heading__regular_1h9ofj" title="Trend over time">
+      Trend over time
+    </h2>
+
+<!---->
+  
+</div>
+
+              <div class="body-text mt-8 text-neutral-medium">
+                This chart shows a 30-day average and is determined each day by summing the NPS scores of the most recent 30 days and dividing by the amount of NPS responses during that period, mitigating the impact of short-term fluctuations.
+              </div>
+                      </div>
+
+<!---->        </div>
+
+          <div class="absolute right-16 top-16">
+              
+      <button class="font-medium max-w-full Button__root_1ytjkr Button__appearance--secondary_1ytjkr Button__size--medium_1ytjkr Button__iconOnly_1ytjkr invisible appear-as-text ember-tooltip-target" type="button">
+    
+
+<!---->
+        <span class="inline-flex items-center justify-center w-20 h-20 text-[16px] transition-colors  Button__icon_1ytjkr">
+    <svg class="svg-inline--fa fa-chart-area fa-fw" data-prefix="far" data-icon="chart-area" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M48 56c0-13.3-10.7-24-24-24S0 42.7 0 56V408c0 39.8 32.2 72 72 72H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H72c-13.3 0-24-10.7-24-24V56zM286.1 225.9c9 9 21.2 14.1 33.9 14.1s24.9-5.1 33.9-14.1l27.3-27.3L432 257.8l0 78.2H144l0-92.1 80-80 62.1 62.1zM320 192l-33.9-33.9-39.4-39.4c-12.5-12.5-32.8-12.5-45.3 0l-91.3 91.3c-9 9-14.1 21.2-14.1 33.9V352c0 17.7 14.3 32 32 32H448c17.7 0 32-14.3 32-32V257.8c0-11.5-4.1-22.5-11.6-31.2l-62-72.3c-12.1-14.2-33.7-15-46.9-1.8l-5.6 5.6L320 192z"></path>
+    </svg>
+  
+<!----></span>
+
+<!---->
+<!---->
+<!---->
+<!---->
+        <div id="ember1728" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+
+<!---->    
+  </button>
+
+<!---->  
+
+          </div>
+
+<!---->
+            <div class="mx-auto flex flex-1 max-w-[400px] min-h-[400px] text-center">
+  <div class="self-center w-full">
+      <span class="inline-flex items-center justify-center w-48 h-48 text-[38px] flex justify-center items-center rounded-full mb-16 bg-decorative-neutral-weak !w-[88px] !h-[88px]
+          mb-16">
+    <svg class="svg-inline--fa fa-star fa-fw" data-prefix="far" data-icon="star" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+        <path fill="currentColor" d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"></path>
+    </svg>
+  
+<!----></span>
+
+<!---->
+    <div class="body-text
+        text-neutral-medium">
+      
+              <span class="text-neutral">
+                  No data yet.
+              </span>
+            
+    </div>
+
+<!---->  </div>
+</div>
+      </div>
+<!---->    </a>
+
+  
+
+</div>
+      
+</div>
+
+    <div class="Cell__gridSpan--two_h7ptwv Cell__setHeight_h7ptwv">
+  
+      <div class="Card__root_1kkjkp relative flex h-full max-h-[470px] overflow-hidden p-0">
+    
+    <a id="ember1729" class="ember-view flex grow p-16  max-w-full" href="/companies/thAPQbZDwJI/analytics/nps-overview">
+      <div class="flex min-w-0 max-w-full flex-1 flex-col">
+        <div class="mb-8 flex justify-between text-neutral">
+          <div>
+            <div class="group flex items-center gap-8">
+    <h2 class="Heading__root_1h9ofj Heading__regular_1h9ofj" title="NPS responses">
+      NPS responses
+    </h2>
+
+<!---->
+  
+</div>
+
+<!---->          </div>
+
+<!---->        </div>
+
+          <div class="absolute right-16 top-16">
+              
+      <button class="font-medium max-w-full Button__root_1ytjkr Button__appearance--secondary_1ytjkr Button__size--medium_1ytjkr Button__iconOnly_1ytjkr invisible appear-as-text ember-tooltip-target" type="button">
+    
+
+<!---->
+        <span class="inline-flex items-center justify-center w-20 h-20 text-[16px] transition-colors  Button__icon_1ytjkr">
+    <svg class="svg-inline--fa fa-chart-area fa-fw" data-prefix="far" data-icon="chart-area" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M48 56c0-13.3-10.7-24-24-24S0 42.7 0 56V408c0 39.8 32.2 72 72 72H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H72c-13.3 0-24-10.7-24-24V56zM286.1 225.9c9 9 21.2 14.1 33.9 14.1s24.9-5.1 33.9-14.1l27.3-27.3L432 257.8l0 78.2H144l0-92.1 80-80 62.1 62.1zM320 192l-33.9-33.9-39.4-39.4c-12.5-12.5-32.8-12.5-45.3 0l-91.3 91.3c-9 9-14.1 21.2-14.1 33.9V352c0 17.7 14.3 32 32 32H448c17.7 0 32-14.3 32-32V257.8c0-11.5-4.1-22.5-11.6-31.2l-62-72.3c-12.1-14.2-33.7-15-46.9-1.8l-5.6 5.6L320 192z"></path>
+    </svg>
+  
+<!----></span>
+
+<!---->
+<!---->
+<!---->
+<!---->
+        <div id="ember1731" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+
+<!---->    
+  </button>
+
+<!---->  
+
+          </div>
+
+<!---->
+            <div class="mx-auto flex flex-1 max-w-[400px] min-h-[400px] text-center">
+  <div class="self-center w-full">
+      <span class="inline-flex items-center justify-center w-48 h-48 text-[38px] flex justify-center items-center rounded-full mb-16 bg-decorative-neutral-weak !w-[88px] !h-[88px]
+          mb-16">
+    <svg class="svg-inline--fa fa-star fa-fw" data-prefix="far" data-icon="star" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+        <path fill="currentColor" d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"></path>
+    </svg>
+  
+<!----></span>
+
+<!---->
+    <div class="body-text
+        text-neutral-medium">
+      
+              <span class="text-neutral">
+                  No data yet.
+              </span>
+            
+    </div>
+
+<!---->  </div>
+</div>
+      </div>
+<!---->    </a>
+
+  
+
+</div>
+    
+</div>
+  
+</div>
+
+    <h3 class="mb-24">
+      Users
+    </h3>
+
+    <div class="Grid__grid_1x0s4z Grid__gridCols_1x0s4z Grid__gridGap_1x0s4z mb-64">
+  
+      <div class="col-span-6 grid grid-cols-6 gap-14">
+<!----></div>
+
+      <div class="Cell__gridSpan--four_h7ptwv Cell__setHeight_h7ptwv">
+  
+        <div class="Card__root_1kkjkp Card__hover_1kkjkp">
+    
+  <a id="ember1779" class="ember-view flex h-full flex-col" href="/companies/thAPQbZDwJI/analytics/team-activity">
+    <div class="mb-16">
+      <div class="flex justify-between text-neutral">
+        <h4>Activities</h4>
+
+            
+      <button class="font-medium max-w-full Button__root_1ytjkr Button__appearance--secondary_1ytjkr Button__size--medium_1ytjkr Button__iconOnly_1ytjkr invisible appear-as-text ember-tooltip-target" type="button">
+    
+
+<!---->
+        <span class="inline-flex items-center justify-center w-20 h-20 text-[16px] transition-colors  Button__icon_1ytjkr">
+    <svg class="svg-inline--fa fa-chart-area fa-fw" data-prefix="far" data-icon="chart-area" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M48 56c0-13.3-10.7-24-24-24S0 42.7 0 56V408c0 39.8 32.2 72 72 72H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H72c-13.3 0-24-10.7-24-24V56zM286.1 225.9c9 9 21.2 14.1 33.9 14.1s24.9-5.1 33.9-14.1l27.3-27.3L432 257.8l0 78.2H144l0-92.1 80-80 62.1 62.1zM320 192l-33.9-33.9-39.4-39.4c-12.5-12.5-32.8-12.5-45.3 0l-91.3 91.3c-9 9-14.1 21.2-14.1 33.9V352c0 17.7 14.3 32 32 32H448c17.7 0 32-14.3 32-32V257.8c0-11.5-4.1-22.5-11.6-31.2l-62-72.3c-12.1-14.2-33.7-15-46.9-1.8l-5.6 5.6L320 192z"></path>
+    </svg>
+  
+<!----></span>
+
+<!---->
+<!---->
+<!---->
+<!---->
+        <div id="ember1781" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+
+<!---->    
+  </button>
+
+<!---->  
+
+      </div>
+      <div class="flex items-center">
+        <div class="mb-16 mt-8 mb-0 mt-0 flex items-center">
+  <div class="group flex items-center gap-8">
+    <h2 class="Heading__root_1h9ofj Heading__chartCompare_1h9ofj mr-0" title="0 ">
+      0 
+    </h2>
+
+<!---->
+  
+</div>
+
+        <span class="flex items-center">
+      -
+    </span>
+  
+</div>
+<!---->      </div>
+    </div>
+
+    <div class="mb-16">
+      <div>
+  <div>
+  <div class="overflow-hidden" data-highcharts-chart="11" data-render-state="settled" style="overflow: hidden;"><div id="highcharts-bvykt4q-398" dir="ltr" style="position: relative; overflow: hidden; width: 722px; height: 300px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); user-select: none; touch-action: manipulation; outline: none; font-size: 14px;" class="highcharts-container "><svg version="1.1" class="highcharts-root" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px;" xmlns="http://www.w3.org/2000/svg" width="722" height="300" viewBox="0 0 722 300" role="img" aria-label=""><desc>Created with Highcharts 11.2.0</desc><defs><filter id="highcharts-drop-shadow-11"><feDropShadow dx="1" dy="1" flood-color="#000000" flood-opacity="0.75" stdDeviation="2.5"></feDropShadow></filter><clipPath id="highcharts-bvykt4q-399-"><rect x="0" y="0" width="285" height="702" fill="none"></rect></clipPath><clipPath id="highcharts-bvykt4q-400-"><rect x="0" y="0" width="285" height="702" fill="none"></rect></clipPath></defs><rect fill="transparent" class="highcharts-background" filter="none" x="0" y="0" width="722" height="300" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="10" y="0" width="702" height="285" filter="none"></rect><g class="highcharts-pane-group" data-z-index="0"></g><g class="highcharts-grid highcharts-xaxis-grid" data-z-index="1"></g><g class="highcharts-grid highcharts-yaxis-grid" data-z-index="1"></g><rect fill="none" class="highcharts-plot-border" data-z-index="1" stroke="#cccccc" stroke-width="0" x="10" y="0" width="702" height="285"></rect><g class="highcharts-axis highcharts-xaxis" data-z-index="2"><path fill="none" class="highcharts-axis-line" stroke="#eeeff2" stroke-width="1" data-z-index="7" d="M 9.5 0 L 9.5 285"></path></g><g class="highcharts-axis highcharts-yaxis" data-z-index="2"><path fill="none" class="highcharts-axis-line" stroke="transparent" stroke-width="1" data-z-index="7" d="M 10 285.5 L 712 285.5"></path></g><g class="highcharts-series-group" data-z-index="3" filter="none"><g class="highcharts-series highcharts-series-0 highcharts-bar-series highcharts-color-0 highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(10,0) rotate(90 208.5 493.5) scale(-1 1)" clip-path="url(#highcharts-bvykt4q-400-)"></g><g class="highcharts-markers highcharts-series-0 highcharts-bar-series highcharts-color-0" data-z-index="0.1" opacity="1" transform="translate(10,0) scale(1 1)" clip-path="none"></g><g class="highcharts-series highcharts-series-1 highcharts-bar-series highcharts-color-1 highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(10,0) rotate(90 208.5 493.5) scale(-1 1)" clip-path="url(#highcharts-bvykt4q-400-)"></g><g class="highcharts-markers highcharts-series-1 highcharts-bar-series highcharts-color-1" data-z-index="0.1" opacity="1" transform="translate(10,0) scale(1 1)" clip-path="none"></g><g class="highcharts-series highcharts-series-2 highcharts-bar-series highcharts-color-2 highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(10,0) rotate(90 208.5 493.5) scale(-1 1)" clip-path="url(#highcharts-bvykt4q-400-)"></g><g class="highcharts-markers highcharts-series-2 highcharts-bar-series highcharts-color-2" data-z-index="0.1" opacity="1" transform="translate(10,0) scale(1 1)" clip-path="none"></g><g class="highcharts-series highcharts-series-3 highcharts-bar-series highcharts-color-3 highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(10,0) rotate(90 208.5 493.5) scale(-1 1)" clip-path="url(#highcharts-bvykt4q-400-)"></g><g class="highcharts-markers highcharts-series-3 highcharts-bar-series highcharts-color-3" data-z-index="0.1" opacity="1" transform="translate(10,0) scale(1 1)" clip-path="none"></g><g class="highcharts-series highcharts-series-4 highcharts-bar-series highcharts-color-4 highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(10,0) rotate(90 208.5 493.5) scale(-1 1)" clip-path="url(#highcharts-bvykt4q-400-)"></g><g class="highcharts-markers highcharts-series-4 highcharts-bar-series highcharts-color-4" data-z-index="0.1" opacity="1" transform="translate(10,0) scale(1 1)" clip-path="none"></g><g class="highcharts-series highcharts-series-5 highcharts-bar-series highcharts-color-5 highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(10,0) rotate(90 208.5 493.5) scale(-1 1)" clip-path="url(#highcharts-bvykt4q-400-)"></g><g class="highcharts-markers highcharts-series-5 highcharts-bar-series highcharts-color-5" data-z-index="0.1" opacity="1" transform="translate(10,0) scale(1 1)" clip-path="none"></g><g class="highcharts-series highcharts-series-6 highcharts-bar-series highcharts-color-6 highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(10,0) rotate(90 208.5 493.5) scale(-1 1)" clip-path="url(#highcharts-bvykt4q-400-)"></g><g class="highcharts-markers highcharts-series-6 highcharts-bar-series highcharts-color-6" data-z-index="0.1" opacity="1" transform="translate(10,0) scale(1 1)" clip-path="none"></g><g class="highcharts-series highcharts-series-7 highcharts-bar-series highcharts-color-7 highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(10,0) rotate(90 208.5 493.5) scale(-1 1)" clip-path="url(#highcharts-bvykt4q-400-)"></g><g class="highcharts-markers highcharts-series-7 highcharts-bar-series highcharts-color-7" data-z-index="0.1" opacity="1" transform="translate(10,0) scale(1 1)" clip-path="none"></g><g class="highcharts-series highcharts-series-8 highcharts-bar-series highcharts-color-8 highcharts-tracker" data-z-index="0.1" opacity="1" transform="translate(10,0) rotate(90 208.5 493.5) scale(-1 1)" clip-path="url(#highcharts-bvykt4q-400-)"></g><g class="highcharts-markers highcharts-series-8 highcharts-bar-series highcharts-color-8" data-z-index="0.1" opacity="1" transform="translate(10,0) scale(1 1)" clip-path="none"></g></g><text x="361" text-anchor="middle" class="highcharts-title" data-z-index="4" style="font-size: 1.2em; color: rgb(51, 51, 51); font-weight: bold; fill: rgb(51, 51, 51);" y="22"></text><text x="361" text-anchor="middle" class="highcharts-subtitle" data-z-index="4" style="color: rgb(102, 102, 102); font-size: 0.8em; fill: rgb(102, 102, 102);" y="23"></text><text x="10" text-anchor="start" class="highcharts-caption" data-z-index="4" style="color: rgb(102, 102, 102); font-size: 0.8em; fill: rgb(102, 102, 102);" y="296"></text><g class="highcharts-axis-labels highcharts-xaxis-labels" data-z-index="7"></g><g class="highcharts-axis-labels highcharts-yaxis-labels" data-z-index="7"></g></svg></div></div>
+</div>
+</div>
+    </div>
+
+    <div class="mb-8">
+      <div class="Legend__root_4i9wn">
+  <ul class="flex list-inside list-square flex-wrap ">
+        <div>
+          <div class="flex items-center">
+            <div class="bg-charts-activity-type-moves
+                mr-8
+                h-8
+                w-8">&nbsp;</div>
+            <div class=" Legend__label_4i9wn">
+                <span class="flex items-center Legend__labelText_4i9wn">
+                  Moves
+                </span>
+                          </div>
+          </div>
+<!---->        </div>
+        <div>
+          <div class="flex items-center">
+            <div class="bg-charts-activity-type-notes
+                mr-8
+                h-8
+                w-8">&nbsp;</div>
+            <div class=" Legend__label_4i9wn">
+                <span class="flex items-center Legend__labelText_4i9wn">
+                  Notes
+                </span>
+                          </div>
+          </div>
+<!---->        </div>
+        <div>
+          <div class="flex items-center">
+            <div class="bg-charts-activity-type-rejections
+                mr-8
+                h-8
+                w-8">&nbsp;</div>
+            <div class=" Legend__label_4i9wn">
+                <span class="flex items-center Legend__labelText_4i9wn">
+                  Rejections
+                </span>
+                          </div>
+          </div>
+<!---->        </div>
+        <div>
+          <div class="flex items-center">
+            <div class="bg-charts-activity-type-messages
+                mr-8
+                h-8
+                w-8">&nbsp;</div>
+            <div class=" Legend__label_4i9wn">
+                <span class="flex items-center Legend__labelText_4i9wn">
+                  Messages
+                </span>
+                          </div>
+          </div>
+<!---->        </div>
+        <div>
+          <div class="flex items-center">
+            <div class="bg-charts-activity-type-sources
+                mr-8
+                h-8
+                w-8">&nbsp;</div>
+            <div class=" Legend__label_4i9wn">
+                <span class="flex items-center Legend__labelText_4i9wn">
+                  Sources
+                </span>
+                          </div>
+          </div>
+<!---->        </div>
+        <div>
+          <div class="flex items-center">
+            <div class="bg-charts-activity-type-reviews
+                mr-8
+                h-8
+                w-8">&nbsp;</div>
+            <div class=" Legend__label_4i9wn">
+                <span class="flex items-center Legend__labelText_4i9wn">
+                  Reviews
+                </span>
+                          </div>
+          </div>
+<!---->        </div>
+        <div>
+          <div class="flex items-center">
+            <div class="bg-charts-activity-type-scores
+                mr-8
+                h-8
+                w-8">&nbsp;</div>
+            <div class=" Legend__label_4i9wn">
+                <span class="flex items-center Legend__labelText_4i9wn">
+                  Scores
+                </span>
+                          </div>
+          </div>
+<!---->        </div>
+        <div>
+          <div class="flex items-center">
+            <div class="bg-charts-activity-type-hires
+                mr-8
+                h-8
+                w-8">&nbsp;</div>
+            <div class=" Legend__label_4i9wn">
+                <span class="flex items-center Legend__labelText_4i9wn">
+                  Hires
+                </span>
+                          </div>
+          </div>
+<!---->        </div>
+        <div>
+          <div class="flex items-center">
+            <div class="bg-charts-activity-type-interviews
+                mr-8
+                h-8
+                w-8">&nbsp;</div>
+            <div class=" Legend__label_4i9wn">
+                <span class="flex items-center Legend__labelText_4i9wn">
+                  Interviews
+                </span>
+                          </div>
+          </div>
+<!---->        </div>
+  </ul>
+</div>
+    </div>
+  </a>
+
+</div>
+      
+</div>
+
+      <div class="Cell__gridSpan--two_h7ptwv Cell__setHeight_h7ptwv">
+  
+        <div class="Card__root_1kkjkp relative flex h-full max-h-[470px] overflow-hidden p-0">
+    
+    <a id="ember1733" class="ember-view flex grow p-16  max-w-full" href="/companies/thAPQbZDwJI/analytics/referrals">
+      <div class="flex min-w-0 max-w-full flex-1 flex-col">
+        <div class="mb-8 flex justify-between text-neutral">
+          <div>
+            <div class="group flex items-center gap-8">
+    <h2 class="Heading__root_1h9ofj Heading__regular_1h9ofj" title="Referrals">
+      Referrals
+    </h2>
+
+<!---->
+  
+</div>
+
+              <div class="body-text mt-8 text-neutral-medium">
+                 out of 0 referrals were hired
+              </div>
+                      </div>
+
+<!---->        </div>
+
+          <div class="absolute right-16 top-16">
+              
+      <button class="font-medium max-w-full Button__root_1ytjkr Button__appearance--secondary_1ytjkr Button__size--medium_1ytjkr Button__iconOnly_1ytjkr invisible appear-as-text ember-tooltip-target" type="button">
+    
+
+<!---->
+        <span class="inline-flex items-center justify-center w-20 h-20 text-[16px] transition-colors  Button__icon_1ytjkr">
+    <svg class="svg-inline--fa fa-chart-area fa-fw" data-prefix="far" data-icon="chart-area" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M48 56c0-13.3-10.7-24-24-24S0 42.7 0 56V408c0 39.8 32.2 72 72 72H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H72c-13.3 0-24-10.7-24-24V56zM286.1 225.9c9 9 21.2 14.1 33.9 14.1s24.9-5.1 33.9-14.1l27.3-27.3L432 257.8l0 78.2H144l0-92.1 80-80 62.1 62.1zM320 192l-33.9-33.9-39.4-39.4c-12.5-12.5-32.8-12.5-45.3 0l-91.3 91.3c-9 9-14.1 21.2-14.1 33.9V352c0 17.7 14.3 32 32 32H448c17.7 0 32-14.3 32-32V257.8c0-11.5-4.1-22.5-11.6-31.2l-62-72.3c-12.1-14.2-33.7-15-46.9-1.8l-5.6 5.6L320 192z"></path>
+    </svg>
+  
+<!----></span>
+
+<!---->
+<!---->
+<!---->
+<!---->
+        <div id="ember1735" class="ember-tooltip-base ember-view">  <div>
+<!---->  </div>
+</div>
+
+<!---->    
+  </button>
+
+<!---->  
+
+          </div>
+
+<!---->
+            <div class="mx-auto flex flex-1 max-w-[400px] min-h-[400px] text-center">
+  <div class="self-center w-full">
+      <span class="inline-flex items-center justify-center w-48 h-48 text-[38px] flex justify-center items-center rounded-full mb-16 bg-decorative-neutral-weak !w-[88px] !h-[88px]
+          mb-16">
+    <svg class="svg-inline--fa fa-star fa-fw" data-prefix="far" data-icon="star" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+        <path fill="currentColor" d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"></path>
+    </svg>
+  
+<!----></span>
+
+<!---->
+    <div class="body-text
+        text-neutral-medium">
+      
+              <span class="text-neutral">
+                  No referrals yet
+              </span>
+            
+    </div>
+
+<!---->  </div>
+</div>
+      </div>
+<!---->    </a>
+
+  
+
+</div>
+      
+</div>
+    
+</div>
+
+              </div>
+
+      <div class="secondary-col max-w-[200px] px-0 print:hidden
+    !-ml-8 border-r border-t border-neutral shadow-left-sidebar 
+    ">
+    <div class="report-navigation-menu sticky top-0 z-stickyTableHeader pb-92 pt-20">
+      <div class="relative top-0 pl-0 pr-8">
+          <nav aria-label="Audience" class="c-subnav c-subnav--default">
+            <h2 class="c-subnav__header">
+              Audience
+            </h2>
+            <ul class="flex flex-col gap-8">
+                <li>
+                  <a id="ember1736" class="ember-view c-subnav__item c-subnav__item--default" href="/companies/thAPQbZDwJI/analytics/visitors">
+                    Visitors
+                  </a>
+                </li>
+                <li>
+                  <a id="ember1737" class="ember-view c-subnav__item c-subnav__item--default" href="/companies/thAPQbZDwJI/analytics/mobile">
+                    Devices
+                  </a>
+                </li>
+                <li>
+                  <a id="ember1738" class="ember-view c-subnav__item c-subnav__item--default" href="/companies/thAPQbZDwJI/analytics/sources">
+                    Sources
+                  </a>
+                </li>
+                <li>
+                  <a id="ember1739" class="ember-view c-subnav__item c-subnav__item--default" href="/companies/thAPQbZDwJI/analytics/promotions">
+                    Promotions
+                  </a>
+                </li>
+            </ul>
+          </nav>
+          <nav aria-label="Recruitment" class="c-subnav c-subnav--default">
+            <h2 class="c-subnav__header">
+              Recruitment
+            </h2>
+            <ul class="flex flex-col gap-8">
+                <li>
+                  <a id="ember1740" class="ember-view c-subnav__item c-subnav__item--default" href="/companies/thAPQbZDwJI/analytics/pipeline-overview">
+                    Pipeline overview
+                  </a>
+                </li>
+                <li>
+                  <a id="ember1741" class="ember-view c-subnav__item c-subnav__item--default" href="/companies/thAPQbZDwJI/analytics/pipeline-speed">
+                    Pipeline speed
+                  </a>
+                </li>
+                <li>
+                  <a id="ember1742" class="ember-view c-subnav__item c-subnav__item--default" href="/companies/thAPQbZDwJI/analytics/pipeline-conversions">
+                    Pipeline conversion
+                  </a>
+                </li>
+                <li>
+                  <a id="ember1743" class="ember-view c-subnav__item c-subnav__item--default" href="/companies/thAPQbZDwJI/analytics/time-to-hire">
+                    Hires
+                  </a>
+                </li>
+                <li>
+                  <a id="ember1744" class="ember-view c-subnav__item c-subnav__item--default" href="/companies/thAPQbZDwJI/analytics/meetings">
+                    Meetings
+                  </a>
+                </li>
+                <li>
+                  <a id="ember1745" class="ember-view c-subnav__item c-subnav__item--default" href="/companies/thAPQbZDwJI/analytics/nps">
+                    NPS
+                  </a>
+                </li>
+                <li>
+                  <a id="ember1746" class="ember-view c-subnav__item c-subnav__item--default" href="/companies/thAPQbZDwJI/analytics/job-overview">
+                    Jobs overview
+                  </a>
+                </li>
+                <li>
+                  <a id="ember1747" class="ember-view c-subnav__item c-subnav__item--default" href="/companies/thAPQbZDwJI/analytics/reject-reasons">
+                    Reject reasons
+                  </a>
+                </li>
+            </ul>
+          </nav>
+          <nav aria-label="Team" class="c-subnav c-subnav--default">
+            <h2 class="c-subnav__header">
+              Team
+            </h2>
+            <ul class="flex flex-col gap-8">
+                <li>
+                  <a id="ember1748" class="ember-view c-subnav__item c-subnav__item--default" href="/companies/thAPQbZDwJI/analytics/team-activity">
+                    Activity
+                  </a>
+                </li>
+                <li>
+                  <a id="ember1749" class="ember-view c-subnav__item c-subnav__item--default" href="/companies/thAPQbZDwJI/analytics/referrals">
+                    Referrals
+                  </a>
+                </li>
+            </ul>
+          </nav>
+          
+      <button class="font-medium max-w-full Button__root_1ytjkr Button__appearance--secondary_1ytjkr Button__size--medium_1ytjkr appear-as-text" type="button">
+    
+
+<!---->
+        <span class="inline-flex items-center justify-center w-20 h-20 text-[16px] transition-colors  Button__icon_1ytjkr Button__icon--left_1ytjkr">
+    <svg class="svg-inline--fa fa-arrow-left-from-line fa-fw" data-prefix="far" data-icon="arrow-left-from-line" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path fill="currentColor" d="M7.6 238.5C2.7 243.1 0 249.4 0 256s2.7 12.9 7.6 17.5l136 128c9.7 9.1 24.8 8.6 33.9-1s8.6-24.8-1-33.9L84.5 280l83.5 0 128 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-128 0-83.5 0 91.9-86.5c9.7-9.1 10.1-24.3 1-33.9s-24.3-10.1-33.9-1l-136 128zM400 424c0 13.3 10.7 24 24 24s24-10.7 24-24l0-336c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 336z"></path>
+    </svg>
+  
+<!----></span>
+
+        <span class="truncate">
+  Collapse menu
+</span>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->    
+  </button>
+
+<!---->  
+
+      </div>
+      <div class="absolute left-full top-[-1px] h-[1px] w-[100px] bg-gradient-to-r from-black/[.06] to-black/0 dark:from-white/[.06] dark:to-white/0"></div>
+    </div>
+</div>
+    </div>
+  </div>
+</section>
+  </div>
+</div>
+<div id="ember-basic-dropdown-wormhole"></div>
+<!---->
+<!----><!---->
+<!---->
+<!---->
+<!---->
+  </div>
+  <div class="loading-bg pointer-events-none absolute inset-0 z-[12] bg-canvas"></div>
+</div>
+
+<div class="pointer-events-none fixed inset-0 isolate " id="application-end-wormhole"></div>
+<div class="pointer-events-none fixed inset-0 isolate " id="ember-teamtailor-modal"></div>
+<div class="pointer-events-none fixed inset-0 isolate " id="ember-teamtailor-modal-on-modal"></div>
+<div class="pointer-events-none fixed inset-0 isolate " id="ember-teamtailor-dropdown"></div>
+<div class="pointer-events-none fixed inset-0 isolate " id="ember-teamtailor-dropdown-submenu"></div>
+<!---->
+  <!---->
+    <!---->
+
+<div id="redactor-context-toolbar-0" dir="ltr" class="redactor-context-toolbar" domtargetshow="" style="display: none;"></div><div id="redactor-context-toolbar-1" dir="ltr" class="redactor-context-toolbar" domtargetshow="" style="display: none;"></div><div id="redactor-context-toolbar-2" dir="ltr" class="redactor-context-toolbar" domtargetshow="" style="display: none;"></div><div id="redactor-context-toolbar-3" dir="ltr" class="redactor-context-toolbar" domtargetshow="" style="display: none;"></div><div id="redactor-context-toolbar-4" dir="ltr" class="redactor-context-toolbar" domtargetshow="" style="display: none;"></div><div id="redactor-context-toolbar-5" dir="ltr" class="redactor-context-toolbar" domtargetshow="" style="display: none;"></div><div id="redactor-context-toolbar-6" dir="ltr" class="redactor-context-toolbar" domtargetshow="" style="display: none;"></div><div id="redactor-context-toolbar-7" dir="ltr" class="redactor-context-toolbar" domtargetshow="" style="display: none;"></div></body></html>
